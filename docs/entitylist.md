@@ -11,12 +11,12 @@
 ### **get_entities**
 === "Return style"
     {{ get_function_table_and_definition("entitylist", "get_entities", [
-        ["class_name", "string", "Name or ID of the class.", true],
+        ["class_name", "string", "Name of the class.", true],
     ], "base_entity_t[]") }}
 
 === "Callback style"
     {{ get_function_table_and_definition("entitylist", "get_entities", [
-        ["class_name", "string", "Name or ID of the class.", true],
+        ["class_name", "string", "Name of the class.", true],
         ["callback", "function", "Callback function, that receives " + format_lua_type("base_entity_t") + " as an argument"]
     ]) }}
     ```lua linenums="1"
