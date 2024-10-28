@@ -5,7 +5,7 @@
 {{ define_function("entitylist", "get_local_player_pawn", [], "base_entity_t") }}
 ---
 {{ define_function("entitylist", "get_entity_from_handle", [
-    ["handle", "number", "Handle of the player"],
+    ["handle", "number", "Handle of the entity"],
 ], "base_entity_t") }}
 ---
 ### **get_entities**
