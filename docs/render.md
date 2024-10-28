@@ -19,7 +19,7 @@
     ``` lua linenums="1"
     local texture = render.setup_texture("C:/example.png")
     register_callback("paint", function()
-        render.texture(texture, vec2_t.new(100, 100), vec2_t.new(200, 200))
+        render.texture(texture, vec2_t(100, 100), vec2_t(200, 200))
     end)
     ```
 ---
@@ -35,7 +35,7 @@
     ``` lua linenums="1"
     local font = render.setup_font("C:/Windows/Fonts/verdana.ttf", 32, 0)
     register_callback("paint", function()
-        render.text("hello from lua api!", font, vec2_t.new(100, 100), color_t.new(1, 1, 1, 1))
+        render.text("hello from lua api!", font, vec2_t(100, 100), color_t(1, 1, 1, 1))
     end)
     ```
 ---
@@ -55,9 +55,9 @@
 ??? example
     ``` lua linenums="1"
     register_callback("paint", function()
-        local w2s = render.world_to_screen(vec3_t.new(0, 0, 0))
+        local w2s = render.world_to_screen(vec3_t(0, 0, 0))
         if w2s then
-            render.circle_fade(w2s, 20, color_t.new(1, 0.25, 0.25, 0.5), color_t.new(0, 0, 0, 1))
+            render.circle_fade(w2s, 20, color_t(1, 0.25, 0.25, 0.5), color_t(0, 0, 0, 1))
         end
     end)
     ```
@@ -173,16 +173,3 @@
     ["color_out", "color_t", "Color of the edge of the circle"],
     ["normal",    "vec3_t",  "Rotation of the circle", true],
 ]) }}
-
-
-
-
-<!-- ``` lua linenums="1"
-for i = 10, 60 do
-    renderer.setup_font("C:/windows/fonts/tahomabd.ttf", i, 0)
-end
-register_callback("paint", function()
-    renderer.rect_filled(vec2_t.new(100, 100), vec2_t.new(200, 200), color_t.new(1, 1, 1, 1))
-end)
-``` -->
-
