@@ -1,0 +1,108 @@
+body{
+    width: 100vw;
+}
+
+[data-md-color-scheme="slate"] {
+    --md-hue: 210;
+    --md-default-bg-color: #171717;
+    --md-primary-fg-color: #7187ff;
+    --md-default-fg-color--light: white;
+    --md-code-hl-comment-color: #ffffffb3;
+}
+.md-typeset h1 {
+    font-weight: 600!important;
+}
+
+.md-header__button.md-logo img, .md-header__button.md-logo svg {
+    display: block;
+    width: 45px;
+    height: 45px;
+}
+
+.md-header__button.md-logo {
+    margin: 0;
+    padding: 0;
+}
+
+.md-typeset a {
+    font-weight: 500;
+}
+
+.md-typeset a code {
+    background-color: #283444;
+    box-shadow: 0 0 7px 1px rgb(40,52,68);
+    transition: background-color 125ms, box-shadow 125ms;
+}
+
+.md-typeset a:focus code, .md-typeset a:hover code{
+    box-shadow: 0 0 7px 1px var(--md-accent-fg-color--transparent);
+}
+
+.glow-link {
+    background-color: #28344444;
+    border-radius: .2rem;
+    box-shadow: 0 0 7px 0px rgba(40, 52, 68, 0.5);
+}
+/* .glow-link:focus, .glow-link:hover{
+    box-shadow: 0 0 10px 1px rgb(40,52,68,0.5);
+} */
+
+[data-md-color-scheme="slate"] .md-header {
+    background-color: rgb(40, 39, 39);
+}
+
+.md-typeset h1, .md-typeset h2{
+    font-weight: 400;
+}
+
+.md-typeset__table{
+    display: block;
+}
+
+.md-typeset__table table{
+    display: table!important;
+}
+
+.md-typeset table:not([class]), .md-typeset code {
+    border-radius: .2rem;
+}
+
+.md-typeset table:not([class]) th {
+    background-color: rgba(255,255,255,0.05) !important;
+}
+
+.md-typeset .admonition, .md-typeset details {
+    font-size: .8rem;
+    margin: .8em 0;
+}
+
+.md-typeset details summary, .md-typeset .admonition-title {
+    font-size: .7rem;
+}
+
+.md-copyright {
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.github-last-updated {
+    line-height: 0;
+    float: right;
+}
+
+/* .github-last-updated img{
+    height: 32px;
+} */
+
+.md-footer-meta__inner {
+    overflow: hidden;
+    padding: 0;
+}
+
+/* .md-footer__inner{
+    display: none!important;
+} */

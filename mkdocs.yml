@@ -1,0 +1,58 @@
+site_name: docs
+nav:
+  - 'render.md'
+  - 'engine.md'
+  - 'entitylist.md'
+  - 'events.md'
+  - 'types':
+    - 'vec2_t': 'types/vec2_t.md'
+    - 'vec3_t': 'types/vec3_t.md'
+    - 'vec4_t': 'types/vec4_t.md'
+    - 'angle_t': 'types/angle_t.md'
+    - 'color_t': 'types/color_t.md'
+    - 'base_entity_t': 'types/base_entity_t.md'
+    - 'game_event_t': 'types/game_event_t.md'
+  - 'environment.md'
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.tracking
+    - navigation.prune
+    - navigation.top
+    - navigation.indexes
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+  palette:
+    primary: darkgrey
+    scheme: slate
+markdown_extensions:
+  - toc:
+      title: On this page
+      permalink: true
+  - tables
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true 
+extra_css:
+  - stylesheets/extra.css
+extra:
+  generator: true
+copyright: Copyright &copy; 2016 - 2020 Martin Donath
+plugins:
+  - macros
+  - search
+watch:
+  - main.py
+validation:
+  absolute_links: ignore

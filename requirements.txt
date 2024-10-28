@@ -1,0 +1,5 @@
+markdown_table_generator==1.1.0
+mkdocs==1.5.1
+mkdocs-material==9.1.21
+mkdocs-macros-plugin==1.0.2
+mkdocs-material-extensions==1.1.1
