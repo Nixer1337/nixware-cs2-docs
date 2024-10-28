@@ -2,7 +2,7 @@ from markdown_table_generator import generate_markdown, table_from_string_list, 
 import glob
 from pathlib import Path
 from textwrap import indent
-from math import floor
+# from math import floor
 
 # parse types folder to get all types
 types_paths = ["docs/types/*.md", "docs/menu/types/*.md"]
