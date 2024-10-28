@@ -3,6 +3,14 @@
 {{ define_function("engine", "execute_client_cmd", [
     ["command", "string", "Command to execute"],
 ]) }}
+??? example
+    ``` lua linenums="1"
+    register_callback("player_death", function(event)
+        if event:get_pawn("attacker") == entitylist.get_local_player_pawn() then 
+            engine.execute_client_cmd("say 1")
+        end
+    end)
+    ```
 ---
 {{ define_function("engine", "play_sound", [
     ["sound_name", "string", "Sound name"],
