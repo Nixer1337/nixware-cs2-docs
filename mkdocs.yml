@@ -1,5 +1,6 @@
 site_name: docs
 nav:
+  - 'Home': 'index.md'
   - 'render.md'
   - 'engine.md'
   - 'entitylist.md'
