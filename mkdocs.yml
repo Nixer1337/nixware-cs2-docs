@@ -1,4 +1,4 @@
-site_name: nixware cs2 docs
+site_name: Nixware CS2 API
 nav:
   - 'Home': 'index.md'
   - 'render.md'
