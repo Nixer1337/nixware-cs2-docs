@@ -153,7 +153,7 @@ header, .md-footer-meta{
 	}
 }
 
-.md-sidebar__inner{
+.md-sidebar__inner:has(nav *){
 	background: #1f1e1e;
 }
 
@@ -162,9 +162,13 @@ header, .md-footer-meta{
 	border-radius: 12px;
 }
 
+.md-sidebar__scrollwrap{
+	border-radius: 12px;
+}
+
 .md-nav__title{
-	background: none!important;
-	box-shadow: none!important;
+	background: #1f1e1e!important;
+	box-shadow: 0px 10px 7px 0px #1f1e1e!important;
 }
 .md-nav__item{
 	padding: 1px 0;
