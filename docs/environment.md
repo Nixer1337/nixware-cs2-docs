@@ -22,6 +22,8 @@
 ---
 {{ define_function("", "get_script_name", [], "string") }}
 ---
+{{ define_function("", "unload_script", []) }}
+---
 {{ define_function("", "print", [
     ["text", "string", "Text to print"],
     ["color", "color_t", "Text color", true],
