@@ -5,6 +5,7 @@ nav:
   - 'engine.md'
   - 'entitylist.md'
   - 'events.md'
+  - 'cvars.md'
   - 'types':
     - 'vec2_t': 'types/vec2_t.md'
     - 'vec3_t': 'types/vec3_t.md'
@@ -12,6 +13,7 @@ nav:
     - 'angle_t': 'types/angle_t.md'
     - 'color_t': 'types/color_t.md'
     - 'base_entity_t': 'types/base_entity_t.md'
+    - 'convar_t': 'types/convar_t.md'
     - 'game_event_t': 'types/game_event_t.md'
   - 'environment.md'
 theme:
