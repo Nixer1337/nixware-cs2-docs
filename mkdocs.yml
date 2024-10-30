@@ -1,4 +1,4 @@
-site_name: docs
+site_name: nixware cs2 docs
 nav:
   - 'Home': 'index.md'
   - 'render.md'
@@ -16,6 +16,8 @@ nav:
   - 'environment.md'
 theme:
   name: material
+  logo: assets/logo.png
+  favicon: assets/logo.png
   custom_dir: overrides
   features:
     - navigation.instant
