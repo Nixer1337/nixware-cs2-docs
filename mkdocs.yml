@@ -31,6 +31,7 @@ theme:
     - content.code.copy
     - search.suggest
     - search.highlight
+    - navigation.footer
   palette:
     primary: darkgrey
     scheme: slate
@@ -49,7 +50,7 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.tabbed:
-      alternate_style: true 
+      alternate_style: true
 extra_css:
   - stylesheets/extra.css
 extra:
