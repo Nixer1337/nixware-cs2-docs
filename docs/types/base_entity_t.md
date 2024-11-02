@@ -68,13 +68,3 @@ Basically we're doing exactly the same thing, but it is much shorter and simpler
 	    end
 	end)
 	```
-## Supported netvar types
-All common types are supported, but  
-currently we don't support these netvar types:
-```
-C_NetworkUtlVectorBase< CUtlString >
-C_NetworkUtlVectorBase< CUtlString >
-C_NetworkUtlVectorBase< CHandle< C_BaseModelEntity > >
-CEntityIOOutput[4]
-CStrongHandle< InfoForResourceTypeCTextureBase >
-```
