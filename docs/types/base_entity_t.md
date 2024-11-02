@@ -17,32 +17,8 @@ Hexadecimal and decimal number are both supported
         print("Localplayer HP: " .. ffi.cast("int*", pawn[offset])[0])
     end
     ```
-## Netvar Colors
-Sometimes we need to change the color of some netvar value.  
-Obviously we can do that this way:
-!!! failure "Bad way"	
-	```lua linenums="1"
-	local m_vSmokeColor = engine.get_netvar_offset("client.dll", "C_SmokeGrenadeProjectile", "m_vSmokeColor")
-	register_callback("paint", function() -- colored smoke
-	    entitylist.get_entities("C_SmokeGrenadeProjectile", function(smoke)
-	        local address = smoke[m_vSmokeColor]
-	        ffi.cast("float*", address)[0] = 255
-	        ffi.cast("float*", address)[1] = 0
-	        ffi.cast("float*", address)[2] = 0
-	    end)
-	end)
-	```
-And more preferrable will be:
-!!! success "Good way"
-	```lua linenums="1"
-	register_callback("paint", function()
-	    entitylist.get_entities("C_SmokeGrenadeProjectile", function(smoke)
-	        smoke.m_vSmokeColor = vec3_t(255, 0, 0)
-	    end)
-	end)
-	```
-Basically we're doing exactly the same thing, but it is much shorter and simpler
-## Netvar usage example
+
+## Using netvars
 !!! example
 	```lua linenums="1"
 	local font = render.setup_font("C:/Windows/Fonts/verdana.ttf", 32, 0)
