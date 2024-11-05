@@ -132,6 +132,16 @@
     ["color_out",   "color_t",  "Color of the edge of the circle"],
 ]) }}
 ---
+{{ define_function("render", "arc", [
+    ["pos",         "vec2_t",   "Position of the arc"],
+    ["radius",      "number",   "Radius of the arc"],
+    ["a_min",      "number",   "Start angle of the arc in radians"],
+    ["a_max",      "number",   "End angle of the arc in radians"],
+    ["segments", "number",  "Count of the arc segments"],
+    ["color",    "color_t", "Color of the arc"],
+    ["thickness","number",  "Thickness of the arc", true],
+]) }}
+---
 {{ define_function("render", "filled_polygon", [
     ["points",  "vec2_t[]", "Array of screen positions"],
     ["color",   "color_t",  "Color of the polygon"],
