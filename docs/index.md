@@ -4,3 +4,11 @@
 
 1. Drop script into `Counter-Strike Global Offensive\game\bin\win64\nix\scripts` folder.
 2. Select the script from list and press "Load".
+
+---
+
+## LuaJIT
+
+We have [LuaJIT](https://luajit.org/) (2.1.1727870382) supported
+
+FFI tutorial - [luajit.org/ext_ffi_tutorial.html](https://luajit.org/ext_ffi_tutorial.html)
