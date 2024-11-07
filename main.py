@@ -144,11 +144,11 @@ def define_env(env):
 
 """
     @env.macro
-    def define_variable(table_name: str, var_name: str, var_type: str = ""):
+    def define_cvar(var_name: str):
         return f"""
 
 ### **{var_name}**
 
-<font size=5>`:::typescript {table_name}.{var_name}:` {format_lua_type(var_type)}</font>
+<font size=5>`:::typescript cvars.{var_name}:` `convar_t`</font>
 
 """
