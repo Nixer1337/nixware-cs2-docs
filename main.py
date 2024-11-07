@@ -143,3 +143,12 @@ def define_env(env):
 ], "", True) }
 
 """
+    @env.macro
+    def define_variable(table_name: str, var_name: str, var_type: str = ""):
+        return f"""
+
+### **{var_name}**
+
+<font size=5>`:::typescript {table_name}.{var_name}:` {format_lua_type(var_type)}</font>
+
+"""
