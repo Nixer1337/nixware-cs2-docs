@@ -68,6 +68,7 @@
     ["from",        "vec2_t",       "Start position of the texture"],
     ["to",          "vec2_t",       "End position of the texture"],
     ["color",       "color_t",      "Texture color", true],
+    ["rounding",    "number",       "Rounding of the texture", true],
 ]) }}
 ---
 {{ define_function("render", "text", [
