@@ -64,3 +64,5 @@ watch:
   - main.py
 validation:
   absolute_links: ignore
+#extra_javascript:
+#  - scripts/virtual_list.js
