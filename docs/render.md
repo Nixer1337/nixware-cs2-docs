@@ -23,6 +23,15 @@
     end)
     ```
 ---
+{{ define_function("render", "setup_texture_rgba", [
+    ["buffer", "number[]", "Texture buffer. It's an uint32 array which contains RGBA pixels."],
+    ["size", "vec2_t", "Texture size"],
+], "texture_t") }}
+---
+{{ define_function("render", "setup_texture_from_memory", [
+    ["buffer", "number[]", "Texture buffer. It's a byte array which contains image bytes."],
+], "texture_t") }}
+---
 
 {{ define_function("render", "setup_font", [
     ["filename", "string", "Path to the font"],

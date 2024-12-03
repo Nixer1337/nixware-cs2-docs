@@ -8,6 +8,8 @@
     ["handle", "number", "Handle of the entity"],
 ], "base_entity_t") }}
 ---
+{{ define_function("entitylist", "get_game_rules", [], "C_CSGameRules") }}
+---
 ### **get_entities**
 === "Return style"
     {{ get_function_table_and_definition("entitylist", "get_entities", [
