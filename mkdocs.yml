@@ -5,7 +5,7 @@ nav:
   - 'engine.md'
   - 'entitylist.md'
   - 'events.md'
-  - 'cvars': 'cvars.md'
+  # - 'cvars': 'cvars.md'
   - 'netvars': 'netvars.md'
   - 'types':
     - 'vec2_t': 'types/vec2_t.md'
