@@ -82,7 +82,7 @@
 ---
 {{ define_function("render", "text", [
     ["text",    "string",  "Text to render"],
-    ["font",    "font_t",  "Font object, or `0` = default font, or `1` = pixel font"],
+    ["font",    "font_t",  "Font object"],
     ["pos",     "vec2_t",  "Position of where text will be rendered"],
     ["color",   "color_t", "Text color", true],
     ["size",    "number",  "Text size", true],
@@ -152,7 +152,12 @@
     ["thickness","number",  "Thickness of the arc", true],
 ]) }}
 ---
-{{ define_function("render", "filled_polygon", [
+{{ define_function("render", "polygon", [
+    ["points",  "vec2_t[]", "Array of screen positions"],
+    ["color",   "color_t",  "Color of the polygon"],
+]) }}
+---
+{{ define_function("render", "concave_polygon", [
     ["points",  "vec2_t[]", "Array of screen positions"],
     ["color",   "color_t",  "Color of the polygon"],
 ]) }}
@@ -160,6 +165,7 @@
 {{ define_function("render", "poly_line", [
     ["points",  "vec2_t[]", "Array of screen positions"],
     ["color",   "color_t",  "Color of the polyline"],
+    ["thickness","number",  "Thickness of polyline", true],
 ]) }}
 ---
 {{ define_function("render", "push_clip_rect", [
