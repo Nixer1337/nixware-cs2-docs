@@ -9,13 +9,13 @@
     ["dst", "vec3_t", "Destination vector"],
 ], "angle_t") }}
 ---
-{{ define_function("math", "normalize_angle", [
-    ["angle", 'number', "Angle"],
-], "number") }}
----
 {{ define_function("math", "calc_fov", [
     ["src", 'angle_t', "Source angle"],
     ["dst", "angle_t", "Destination angle"],
+], "number") }}
+---
+{{ define_function("math", "normalize_angle", [
+    ["angle", 'number', "Angle"],
 ], "number") }}
 ---
 {{ define_function("math", "vector_angles", [
