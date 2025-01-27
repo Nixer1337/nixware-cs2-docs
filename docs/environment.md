@@ -24,7 +24,7 @@
 ---
 {{ define_function("", "unload_script", []) }}
 ---
-{{ define_function("", "print", [
+{{ define_function("", "color_print", [
     ["text", "string", "Text to print"],
     ["color", "color_t", "Text color", true],
 ]) }}
