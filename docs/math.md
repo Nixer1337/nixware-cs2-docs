@@ -24,4 +24,4 @@
 ---
 {{ define_function("math", "angle_vectors", [
     ["angles", 'angle_t', "Angles"],
-], "forward, right, up") }}
+], "[`forward`](/types/vec3_t/), [`right`](/types/vec3_t/), [`up`](/types/vec3_t/)") }}
