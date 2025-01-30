@@ -106,6 +106,7 @@ header, .md-footer-meta{
 .github-last-updated {
     line-height: 0;
     float: right;
+	min-height: 28px;
 }
 
 /* .github-last-updated img{
