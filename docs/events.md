@@ -18,12 +18,14 @@ First argument is the command that was entered.
 !!! example
 	```lua linenums="1"
 	register_callback('console_input', function(cmd)
-		print("user typed: " .. cmd)
-		return false
+		print("user typed:", cmd)
+		if cmd == 'quit' then
+			return false -- prevents quit
+		end
 	end)
 	```
 !!! important "Return value of the function"
-	Return value matters here. If the function returned `false`, the game will not execute the command, otherwise it will.   
+	You can interrupt the in-game command execution by returning `false` from the function. So basically if you return `false`, the command will not be executed by the game. 
 
 ---
 {{ define_function("", "unload", []) }}
