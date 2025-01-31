@@ -1,5 +1,9 @@
 ## Entity functions
 
+{{ define_function("entity", "get_abs_origin", [], "vec3_t", True) }}
+---
+{{ define_function("entity", "get_abs_rotation", [], "angle_t", True) }}
+---
 {{ define_function("entity", "get_class_name", [], "string", True) }}
 ---
 {{ define_function("entity", "get_entity_handle", [], "number", True) }}
