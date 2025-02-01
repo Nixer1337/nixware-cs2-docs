@@ -14,7 +14,7 @@
 ---
 {{ define_function("engine", "play_sound", [
     ["sound_name", "string", "Sound name"],
-    ["volume", "string", "Volume"],
+    ["volume", "number", "Volume in the range [0.0, 1.0]"],
 ]) }}
 ---
 {{ define_function("engine", "chat_print", [
