@@ -21,7 +21,9 @@
     ["text", "string", "Text to print"],
 ]) }}
 ---
-{{ define_function("engine", "get_level_name", []) }}
+{{ define_function("engine", "get_level_name", [], "string") }}
+---
+{{ define_function("engine", "get_product_version_string", [], "string") }}
 ---
 {{ define_function("engine", "get_netvar_offset", [
     ["module_name", "string", "Module name"],
