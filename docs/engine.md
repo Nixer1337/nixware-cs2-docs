@@ -30,3 +30,11 @@
     ["table_name", "string", "Name of the table"],
     ["prop_name", "string", "Name of the property"]
 ], "number") }}
+---
+{{ define_function("engine", "trace_bullet", [
+    ["from_entity", "base_entity_t", "Player whose weapon will be used for this trace"],
+    ["from", "vec3_t", "Position to start tracing from"],
+    ["to", "vec3_t", "Position where the trace ends"]
+], "number") }}
+!!! info 
+    Returns `nil` if bullet can't hit
