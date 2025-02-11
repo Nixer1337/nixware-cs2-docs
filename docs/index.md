@@ -9,7 +9,7 @@
 
 ## LuaJIT
 
-We have [LuaJIT](https://luajit.org/) (2.1.1727870382) supported
+We have [LuaJIT](https://luajit.org/) (2.1.1736781742) supported
 
 FFI tutorial - [luajit.org/ext_ffi_tutorial.html](https://luajit.org/ext_ffi_tutorial.html)
 
