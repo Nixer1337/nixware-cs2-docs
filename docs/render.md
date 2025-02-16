@@ -58,7 +58,7 @@
 ---
 {{ define_function("render", "world_to_screen", [
     ["pos", "vec3_t", "World position"],
-], "vec3_t") }}
+], "vec2_t") }}
 !!! warning
     If world position is not on the screen, return value will be `nil`.
 ??? example
