@@ -17,7 +17,7 @@
     If you specify a texture that does not exist, return value will be `nil`.
 ??? example
     ``` lua linenums="1"
-    local texture = render.setup_texture("C:/example.png")
+    local texture = render.setup_texture("nix/scripts/resources/example.png")
     register_callback("paint", function()
         render.texture(texture, vec2_t(100, 100), vec2_t(200, 200))
     end)
