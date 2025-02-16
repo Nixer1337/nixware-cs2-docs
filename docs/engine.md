@@ -21,6 +21,8 @@
     ["text", "string", "Text to print"],
 ]) }}
 ---
+{{ define_function("engine", "camera_in_thirdperson", [], "boolean") }}
+---
 {{ define_function("engine", "get_level_name", [], "string") }}
 ---
 {{ define_function("engine", "get_product_version_string", [], "string") }}
