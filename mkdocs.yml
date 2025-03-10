@@ -1,6 +1,7 @@
 site_name: Nixware CS2 API
 nav:
   - 'Home': 'index.md'
+  - 'ui.md'
   - 'render.md'
   - 'engine.md'
   - 'entitylist.md'
