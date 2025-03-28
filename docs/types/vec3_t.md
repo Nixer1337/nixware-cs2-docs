@@ -6,6 +6,11 @@
 
 ## Functions
 
+{{ define_function("vec3", "lerp", [
+    ["other", "vec3_t", "Other vector"],
+    ["fraction", "number", "Fraction"],
+], "vec3_t", True) }}
+---
 {{ define_function("vec3", "length_2d", [], "number", True) }}
 ---
 {{ define_function("vec3", "length", [], "number", True) }}
