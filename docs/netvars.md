@@ -1,14 +1,22 @@
 ## C_CSGO_TeamSelectCharacterPosition
 Derived from: [C_CSGO_TeamPreviewCharacterPosition](#c_csgo_teampreviewcharacterposition), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
+---
+
 ## C_HEGrenade
 Derived from: [C_BaseCSGrenade](#c_basecsgrenade), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_FuncMover
 Derived from: [C_BaseToggle](#c_basetoggle), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
+---
+
 ## C_TriggerLerpObject
 Derived from: [C_BaseTrigger](#c_basetrigger), [C_BaseToggle](#c_basetoggle), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## CCSPlayer_MovementServices
 Derived from: [CPlayer_MovementServices_Humanoid](#cplayer_movementservices_humanoid), [CPlayer_MovementServices](#cplayer_movementservices)
@@ -54,6 +62,8 @@ Type | Name
 `float32` | m_flStaminaAtJumpStart
 `float32` | m_flAccumulatedJumpError
 
+---
+
 ## sky3dparams_t
 
 Type | Name
@@ -65,8 +75,12 @@ Type | Name
 `fogparams_t` | fog
 `WorldGroupId_t` | m_nWorldGroupID
 
+---
+
 ## C_WeaponM4A1
 Derived from: [C_CSWeaponBaseGun](#c_csweaponbasegun), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_Item
 Derived from: [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -75,6 +89,8 @@ Type | Name
 ------------ | -------------
 `char[256]` | m_pReticleHintTextName
 
+---
+
 ## C_SoundEventPathCornerEntity
 Derived from: [C_SoundEventEntity](#c_soundevententity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -82,8 +98,12 @@ Type | Name
 ------------ | -------------
 `C_NetworkUtlVectorBase< SoundeventPathCornerPairNetworked_t >` | m_vecCornerPairsNetworked
 
+---
+
 ## C_WeaponM249
 Derived from: [C_CSWeaponBaseGun](#c_csweaponbasegun), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_CSGameRules
 Derived from: [C_TeamplayRules](#c_teamplayrules), [C_MultiplayRules](#c_multiplayrules), [C_GameRules](#c_gamerules)
@@ -192,6 +212,8 @@ Type | Name
 `uint8` | m_nRoundStartCount
 `float64` | m_flLastPerfSampleTime
 
+---
+
 ## CBodyComponentSkeletonInstance
 Derived from: [CBodyComponent](#cbodycomponent), [CEntityComponent](#centitycomponent)
 
@@ -199,8 +221,12 @@ Type | Name
 ------------ | -------------
 `CSkeletonInstance` | m_skeletonInstance
 
+---
+
 ## C_WeaponCZ75a
 Derived from: [C_CSWeaponBaseGun](#c_csweaponbasegun), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_BaseModelEntity
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -241,6 +267,8 @@ Type | Name
 `Color` | m_ClientOverrideTint
 `bool` | m_bUseClientOverrideTint
 
+---
+
 ## C_FootstepControl
 Derived from: [C_BaseTrigger](#c_basetrigger), [C_BaseToggle](#c_basetoggle), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -248,6 +276,8 @@ Type | Name
 ------------ | -------------
 `CUtlSymbolLarge` | m_source
 `CUtlSymbolLarge` | m_destination
+
+---
 
 ## C_PointClientUIHUD
 Derived from: [C_BaseClientUIEntity](#c_baseclientuientity), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -268,6 +298,8 @@ Type | Name
 `bool` | m_bAllowInteractionFromAllSceneWorlds
 `C_NetworkUtlVectorBase< CUtlSymbolLarge >` | m_vecCSSClasses
 
+---
+
 ## C_SpotlightEnd
 Derived from: [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -275,6 +307,8 @@ Type | Name
 ------------ | -------------
 `float32` | m_flLightScale
 `float32` | m_Radius
+
+---
 
 ## CEconItemAttribute
 
@@ -285,6 +319,8 @@ Type | Name
 `float32` | m_flInitialValue
 `int32` | m_nRefundableCurrency
 `bool` | m_bSetBonus
+
+---
 
 ## C_PointCamera
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -318,10 +354,16 @@ Type | Name
 `bool` | m_bIsOn
 `C_PointCamera*` | m_pNext
 
+---
+
 ## CCSPointScriptExtensions_weapon_cs_base
+
+---
 
 ## C_LightSpotEntity
 Derived from: [C_LightEntity](#c_lightentity), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_EnvWind
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -330,8 +372,12 @@ Type | Name
 ------------ | -------------
 `C_EnvWindShared` | m_EnvWindShared
 
+---
+
 ## C_GameRulesProxy
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_BaseCombatCharacter
 Derived from: [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -345,11 +391,17 @@ Type | Name
 `float32` | m_flWaterWorldZ
 `float32` | m_flWaterNextTraceTime
 
+---
+
 ## C_FlashbangProjectile
 Derived from: [C_BaseCSGrenadeProjectile](#c_basecsgrenadeprojectile), [C_BaseGrenade](#c_basegrenade), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
+---
+
 ## CEnvSoundscapeTriggerable
 Derived from: [CEnvSoundscape](#cenvsoundscape), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_SoundEventSphereEntity
 Derived from: [C_SoundEventEntity](#c_soundevententity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -358,17 +410,27 @@ Type | Name
 ------------ | -------------
 `float32` | m_flRadius
 
+---
+
 ## CPlayer_ViewModelServices
 
+
+---
 
 ## CCSGO_WingmanIntroCounterTerroristPosition
 Derived from: [CCSGO_WingmanIntroCharacterPosition](#ccsgo_wingmanintrocharacterposition), [C_CSGO_TeamIntroCharacterPosition](#c_csgo_teamintrocharacterposition), [C_CSGO_TeamPreviewCharacterPosition](#c_csgo_teampreviewcharacterposition), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
+---
+
 ## C_DynamicPropAlias_cable_dynamic
 Derived from: [C_DynamicProp](#c_dynamicprop), [C_BreakableProp](#c_breakableprop), [CBaseProp](#cbaseprop), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
+---
+
 ## C_InfoInstructorHintHostageRescueZone
 Derived from: [C_PointEntity](#c_pointentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_SceneEntity
 Derived from: [C_PointEntity](#c_pointentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -387,6 +449,8 @@ Type | Name
 `bool` | m_bWasPlaying
 `CUtlVector< C_SceneEntity::QueuedEvents_t >` | m_QueuedEvents
 `float32` | m_flCurrentTime
+
+---
 
 ## CPlayer_CameraServices
 
@@ -414,6 +478,8 @@ Type | Name
 `CHandle< C_PostProcessingVolume >` | m_hActivePostProcessingVolume
 `QAngle` | m_angDemoViewAngles
 
+---
+
 ## C_BaseCSGrenade
 Derived from: [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -435,6 +501,8 @@ Type | Name
 `float32` | m_flNextHoldFrac
 `CHandle< C_CSWeaponBase >` | m_hSwitchToWeaponAfterThrow
 
+---
+
 ## C_FuncMonitor
 Derived from: [C_FuncBrush](#c_funcbrush), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -449,14 +517,20 @@ Type | Name
 `bool` | m_bEnabled
 `bool` | m_bDraw3DSkybox
 
+---
+
 ## C_TriggerMultiple
 Derived from: [C_BaseTrigger](#c_basetrigger), [C_BaseToggle](#c_basetoggle), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_RopeKeyframe::CPhysicsDelegate
 
 Type | Name
 ------------ | -------------
 `C_RopeKeyframe*` | m_pKeyframe
+
+---
 
 ## CBodyComponent
 Derived from: [CEntityComponent](#centitycomponent)
@@ -466,6 +540,8 @@ Type | Name
 `CGameSceneNode*` | m_pSceneNode
 `CNetworkVarChainer` | __m_pChainEntity
 
+---
+
 ## C_SoundAreaEntitySphere
 Derived from: [C_SoundAreaEntityBase](#c_soundareaentitybase), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -473,8 +549,12 @@ Type | Name
 ------------ | -------------
 `float32` | m_flRadius
 
+---
+
 ## CCSObserver_MovementServices
 Derived from: [CPlayer_MovementServices](#cplayer_movementservices)
+
+---
 
 ## C_LightGlow
 Derived from: [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -490,6 +570,8 @@ Type | Name
 `float32` | m_flHDRColorScale
 `C_LightGlowOverlay` | m_GlowOverlay
 
+---
+
 ## CountdownTimer
 
 Type | Name
@@ -499,12 +581,16 @@ Type | Name
 `float32` | m_timescale
 `WorldGroupId_t` | m_nWorldGroupId
 
+---
+
 ## CGameSceneNodeHandle
 
 Type | Name
 ------------ | -------------
 `CEntityHandle` | m_hOwner
 `CUtlStringToken` | m_name
+
+---
 
 ## PredictedDamageTag_t
 
@@ -514,6 +600,8 @@ Type | Name
 `float32` | flFlinchModSmall
 `float32` | flFlinchModLarge
 `float32` | flFriendlyFireDamageReductionRatio
+
+---
 
 ## C_ClientRagdoll
 Derived from: [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -535,12 +623,16 @@ Type | Name
 `GameTime_t[10]` | m_flScaleTimeStart
 `GameTime_t[10]` | m_flScaleTimeEnd
 
+---
+
 ## C_GlobalLight
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
 Type | Name
 ------------ | -------------
 `uint16` | m_WindClothForceHandle
+
+---
 
 ## C_CSPlayerResource
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -558,6 +650,8 @@ Type | Name
 `bool` | m_bEndMatchNextMapAllVoted
 `bool` | m_foundGoalPositions
 
+---
+
 ## CSkeletonInstance
 Derived from: [CGameSceneNode](#cgamescenenode)
 
@@ -572,6 +666,8 @@ Type | Name
 `CUtlStringToken` | m_materialGroup
 `uint8` | m_nHitboxSet
 
+---
+
 ## CBodyComponentBaseAnimGraph
 Derived from: [CBodyComponentSkeletonInstance](#cbodycomponentskeletoninstance), [CBodyComponent](#cbodycomponent), [CEntityComponent](#centitycomponent)
 
@@ -579,12 +675,16 @@ Type | Name
 ------------ | -------------
 `CBaseAnimGraphController` | m_animationController
 
+---
+
 ## CBodyComponentPoint
 Derived from: [CBodyComponent](#cbodycomponent), [CEntityComponent](#centitycomponent)
 
 Type | Name
 ------------ | -------------
 `CGameSceneNode` | m_sceneNode
+
+---
 
 ## C_SmokeGrenadeProjectile
 Derived from: [C_BaseCSGrenadeProjectile](#c_basecsgrenadeprojectile), [C_BaseGrenade](#c_basegrenade), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -602,8 +702,12 @@ Type | Name
 `bool` | m_bSmokeVolumeDataReceived
 `bool` | m_bSmokeEffectSpawned
 
+---
+
 ## C_SoundEventEntityAlias_snd_event_point
 Derived from: [C_SoundEventEntity](#c_soundevententity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_CSGO_MapPreviewCameraPath
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -619,8 +723,12 @@ Type | Name
 `float32` | m_flPathLength
 `float32` | m_flPathDuration
 
+---
+
 ## CCSGO_WingmanIntroTerroristPosition
 Derived from: [CCSGO_WingmanIntroCharacterPosition](#ccsgo_wingmanintrocharacterposition), [C_CSGO_TeamIntroCharacterPosition](#c_csgo_teamintrocharacterposition), [C_CSGO_TeamPreviewCharacterPosition](#c_csgo_teampreviewcharacterposition), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_Inferno
 Derived from: [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -652,11 +760,17 @@ Type | Name
 `Vector` | m_maxBounds
 `float32` | m_flLastGrassBurnThink
 
+---
+
 ## C_HostageCarriableProp
 Derived from: [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
+---
+
 ## C_CSGO_TerroristWingmanIntroCamera
 Derived from: [C_CSGO_TeamPreviewCamera](#c_csgo_teampreviewcamera), [C_CSGO_MapPreviewCameraPath](#c_csgo_mappreviewcamerapath), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_PlayerPing
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -669,8 +783,12 @@ Type | Name
 `bool` | m_bUrgent
 `char[18]` | m_szPlaceName
 
+---
+
 ## C_WeaponMP7
 Derived from: [C_CSWeaponBaseGun](#c_csweaponbasegun), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_CSTeam
 Derived from: [C_Team](#c_team), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -688,6 +806,8 @@ Type | Name
 `char[8]` | m_szTeamFlagImage
 `char[8]` | m_szTeamLogoImage
 
+---
+
 ## C_CSGO_MapPreviewCameraPathNode
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -704,11 +824,17 @@ Type | Name
 `Vector` | m_vInTangentWorld
 `Vector` | m_vOutTangentWorld
 
+---
+
 ## C_WeaponMag7
 Derived from: [C_CSWeaponBaseGun](#c_csweaponbasegun), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
+---
+
 ## C_DEagle
 Derived from: [C_CSWeaponBaseGun](#c_csweaponbasegun), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_CSPlayerPawn
 Derived from: [C_CSPlayerPawnBase](#c_csplayerpawnbase), [C_BasePlayerPawn](#c_baseplayerpawn), [C_BaseCombatCharacter](#c_basecombatcharacter), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -820,6 +946,8 @@ Type | Name
 `GameTick_t` | m_nPrevHighestReceivedDamageTagTick
 `int32` | m_nHighestAppliedDamageTagTick
 
+---
+
 ## C_RagdollPropAttached
 Derived from: [C_RagdollProp](#c_ragdollprop), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -832,6 +960,8 @@ Type | Name
 `Vector` | m_vecOffset
 `float32` | m_parentTime
 `bool` | m_bHasParent
+
+---
 
 ## C_BaseCSGrenadeProjectile
 Derived from: [C_BaseGrenade](#c_basegrenade), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -855,6 +985,8 @@ Type | Name
 `CUtlVector< float32 >` | m_arrTrajectoryTrailPointCreationTimes
 `float32` | m_flTrajectoryTrailEffectCreationTime
 
+---
+
 ## C_BaseTrigger
 Derived from: [C_BaseToggle](#c_basetoggle), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -863,6 +995,8 @@ Type | Name
 `bool` | m_bDisabled
 `bool` | m_bClientSidePredicted
 
+---
+
 ## C_WeaponBaseItem
 Derived from: [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -870,6 +1004,8 @@ Type | Name
 ------------ | -------------
 `CountdownTimer` | m_SequenceCompleteTimer
 `bool` | m_bRedraw
+
+---
 
 ## CEffectData
 
@@ -897,8 +1033,12 @@ Type | Name
 `uint16` | m_iEffectName
 `uint8` | m_nExplosionType
 
+---
+
 ## C_MolotovGrenade
 Derived from: [C_BaseCSGrenade](#c_basecsgrenade), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_BaseButton
 Derived from: [C_BaseToggle](#c_basetoggle), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -909,6 +1049,8 @@ Type | Name
 `bool` | m_usable
 `CUtlSymbolLarge` | m_szDisplayText
 
+---
+
 ## CCSPlayer_ViewModelServices
 Derived from: [CPlayer_ViewModelServices](#cplayer_viewmodelservices)
 
@@ -916,8 +1058,12 @@ Type | Name
 ------------ | -------------
 `CHandle< C_BaseViewModel >[3]` | m_hViewModel
 
+---
+
 ## CInfoParticleTarget
 Derived from: [C_PointEntity](#c_pointentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## CPlayer_MovementServices_Humanoid
 Derived from: [CPlayer_MovementServices](#cplayer_movementservices)
@@ -937,11 +1083,17 @@ Type | Name
 `CUtlStringToken` | m_surfaceProps
 `int32` | m_nStepside
 
+---
+
 ## C_WeaponAug
 Derived from: [C_CSWeaponBaseGun](#c_csweaponbasegun), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
+---
+
 ## CEnvSoundscapeProxyAlias_snd_soundscape_proxy
 Derived from: [CEnvSoundscapeProxy](#cenvsoundscapeproxy), [CEnvSoundscape](#cenvsoundscape), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_PointClientUIWorldPanel
 Derived from: [C_BaseClientUIEntity](#c_baseclientuientity), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -977,8 +1129,12 @@ Type | Name
 `bool` | m_bDisableMipGen
 `int32` | m_nExplicitImageLayout
 
+---
+
 ## C_CSMinimapBoundary
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## CCSGameModeRules_Deathmatch
 Derived from: [CCSGameModeRules](#ccsgamemoderules)
@@ -989,11 +1145,17 @@ Type | Name
 `float32` | m_flDMBonusTimeLength
 `CUtlString` | m_sDMBonusWeapon
 
+---
+
 ## C_CSGO_EndOfMatchCharacterPosition
 Derived from: [C_CSGO_TeamPreviewCharacterPosition](#c_csgo_teampreviewcharacterposition), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
+---
+
 ## C_SoundOpvarSetAABBEntity
 Derived from: [C_SoundOpvarSetPointEntity](#c_soundopvarsetpointentity), [C_SoundOpvarSetPointBase](#c_soundopvarsetpointbase), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_GameRules
 
@@ -1004,8 +1166,12 @@ Type | Name
 `int32` | m_nPauseStartTick
 `bool` | m_bGamePaused
 
+---
+
 ## C_PropDoorRotating
 Derived from: [C_BasePropDoor](#c_basepropdoor), [C_DynamicProp](#c_dynamicprop), [C_BreakableProp](#c_breakableprop), [CBaseProp](#cbaseprop), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_Team
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -1017,6 +1183,8 @@ Type | Name
 `int32` | m_iScore
 `char[129]` | m_szTeamname
 
+---
+
 ## C_SoundAreaEntityOrientedBox
 Derived from: [C_SoundAreaEntityBase](#c_soundareaentitybase), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -1024,6 +1192,8 @@ Type | Name
 ------------ | -------------
 `Vector` | m_vMin
 `Vector` | m_vMax
+
+---
 
 ## C_TextureBasedAnimatable
 Derived from: [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -1039,11 +1209,17 @@ Type | Name
 `float32` | m_flStartTime
 `float32` | m_flStartFrame
 
+---
+
 ## C_SoundOpvarSetPointEntity
 Derived from: [C_SoundOpvarSetPointBase](#c_soundopvarsetpointbase), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
+---
+
 ## C_LightOrthoEntity
 Derived from: [C_LightEntity](#c_lightentity), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## CCSPlayer_WaterServices
 Derived from: [CPlayer_WaterServices](#cplayer_waterservices)
@@ -1054,6 +1230,8 @@ Type | Name
 `Vector` | m_vecWaterJumpVel
 `float32` | m_flSwimSoundTime
 
+---
+
 ## CSkyboxReference
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -1062,8 +1240,12 @@ Type | Name
 `WorldGroupId_t` | m_worldGroupId
 `CHandle< C_SkyCamera >` | m_hSkyCamera
 
+---
+
 ## C_TonemapController2Alias_env_tonemap_controller2
 Derived from: [C_TonemapController2](#c_tonemapcontroller2), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## CProjectedTextureBase
 
@@ -1100,6 +1282,8 @@ Type | Name
 `float32` | m_flRotation
 `bool` | m_bFlipHorizontal
 
+---
+
 ## CCSPlayerController_InventoryServices
 
 
@@ -1114,11 +1298,17 @@ Type | Name
 `int32` | m_nPersonaDataXpTrailLevel
 `C_UtlVectorEmbeddedNetworkVar< ServerAuthoritativeWeaponSlot_t >` | m_vecServerAuthoritativeWeaponSlots
 
+---
+
 ## C_PathParticleRopeAlias_path_particle_rope_clientside
 Derived from: [C_PathParticleRope](#c_pathparticlerope), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
+---
+
 ## CPlayer_UseServices
 
+
+---
 
 ## C_CSGOViewModel
 Derived from: [C_PredictedViewModel](#c_predictedviewmodel), [C_BaseViewModel](#c_baseviewmodel), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -1130,12 +1320,16 @@ Type | Name
 `bool` | m_bNeedToQueueHighResComposite
 `QAngle` | m_vLoweredWeaponOffset
 
+---
+
 ## CScriptComponent
 Derived from: [CEntityComponent](#centitycomponent)
 
 Type | Name
 ------------ | -------------
 `CUtlSymbolLarge` | m_scriptClassName
+
+---
 
 ## C_EnvLightProbeVolume
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -1160,6 +1354,8 @@ Type | Name
 `int32` | m_Entity_nLightProbeAtlasZ
 `bool` | m_Entity_bEnabled
 
+---
+
 ## C_ViewmodelAttachmentModel
 Derived from: [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -1168,10 +1364,16 @@ Type | Name
 `bool` | m_bShouldFrontFaceCullLeftHanded
 `bool` | m_bCreatedLeftHanded
 
+---
+
 ## CCSPointScriptExtensions_player_controller
+
+---
 
 ## C_Flashbang
 Derived from: [C_BaseCSGrenade](#c_basecsgrenade), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## CSPerRoundStats_t
 
@@ -1191,12 +1393,16 @@ Type | Name
 `int32` | m_iUtilityDamage
 `int32` | m_iEnemiesFlashed
 
+---
+
 ## CRagdollManager
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
 Type | Name
 ------------ | -------------
 `int8` | m_iCurrentMaxRagdollCount
+
+---
 
 ## C_TeamRoundTimer
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -1234,6 +1440,8 @@ Type | Name
 `int32` | m_nOldTimerLength
 `int32` | m_nOldTimerState
 
+---
+
 ## WeaponPurchaseCount_t
 
 Type | Name
@@ -1241,17 +1449,27 @@ Type | Name
 `uint16` | m_nItemDefIndex
 `uint16` | m_nCount
 
+---
+
 ## C_SmokeGrenade
 Derived from: [C_BaseCSGrenade](#c_basecsgrenade), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_WeaponGalilAR
 Derived from: [C_CSWeaponBaseGun](#c_csweaponbasegun), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
+---
+
 ## C_WorldModelGloves
 Derived from: [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
+---
+
 ## C_EnvProjectedTexture
 Derived from: [C_ModelPointEntity](#c_modelpointentity), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## CPathSimple
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -1259,6 +1477,8 @@ Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 Type | Name
 ------------ | -------------
 `CUtlString` | m_pathString
+
+---
 
 ## CCSPlayerBase_CameraServices
 Derived from: [CPlayer_CameraServices](#cplayer_cameraservices)
@@ -1272,6 +1492,8 @@ Type | Name
 `CHandle< C_BaseEntity >` | m_hZoomOwner
 `float32` | m_flLastShotFOV
 
+---
+
 ## CPointOffScreenIndicatorUi
 Derived from: [C_PointClientUIWorldPanel](#c_pointclientuiworldpanel), [C_BaseClientUIEntity](#c_baseclientuientity), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -1282,10 +1504,16 @@ Type | Name
 `float32` | m_flSeenTargetTime
 `C_PointClientUIWorldPanel*` | m_pTargetPanel
 
+---
+
 ## CCSPointScriptExtensions_entity
+
+---
 
 ## CBodyComponentBaseModelEntity
 Derived from: [CBodyComponentSkeletonInstance](#cbodycomponentskeletoninstance), [CBodyComponent](#cbodycomponent), [CEntityComponent](#centitycomponent)
+
+---
 
 ## C_CSWeaponBaseGun
 Derived from: [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -1299,6 +1527,8 @@ Type | Name
 `bool` | m_inPrecache
 `bool` | m_bNeedsBoltAction
 
+---
+
 ## C_SkyCamera
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -1309,8 +1539,12 @@ Type | Name
 `bool` | m_bUseAngles
 `C_SkyCamera*` | m_pNext
 
+---
+
 ## C_World
 Derived from: [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_EntityDissolve
 Derived from: [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -1331,8 +1565,12 @@ Type | Name
 `bool` | m_bCoreExplode
 `bool` | m_bLinkedToServerEnt
 
+---
+
 ## CCSObserver_UseServices
 Derived from: [CPlayer_UseServices](#cplayer_useservices)
+
+---
 
 ## C_fogplayerparams_t
 
@@ -1352,6 +1590,8 @@ Type | Name
 `float32` | m_flNewMaxDensity
 `float32` | m_flNewHDRColorScale
 `float32` | m_flNewFarZ
+
+---
 
 ## C_CSPlayerPawnBase
 Derived from: [C_BasePlayerPawn](#c_baseplayerpawn), [C_BaseCombatCharacter](#c_basecombatcharacter), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -1424,8 +1664,12 @@ Type | Name
 `bool` | m_bGuardianShouldSprayCustomXMark
 `CHandle< CCSPlayerController >` | m_hOriginalController
 
+---
+
 ## C_Item_Healthshot
 Derived from: [C_WeaponBaseItem](#c_weaponbaseitem), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_EnvWindShared
 
@@ -1461,6 +1705,8 @@ Type | Name
 `float32` | m_flWindSpeedVariation
 `CHandle< C_BaseEntity >` | m_hEntOwner
 
+---
+
 ## C_PostProcessingVolume
 Derived from: [C_BaseTrigger](#c_basetrigger), [C_BaseToggle](#c_basetoggle), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -1483,6 +1729,8 @@ Type | Name
 `float32` | m_flTonemapPercentBrightPixels
 `float32` | m_flTonemapMinAvgLum
 
+---
+
 ## CCSPlayer_PingServices
 
 
@@ -1490,11 +1738,17 @@ Type | Name
 ------------ | -------------
 `CHandle< C_BaseEntity >` | m_hPlayerPing
 
+---
+
 ## CPlayer_FlashlightServices
 
 
+---
+
 ## CServerOnlyModelEntity
 Derived from: [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_AttributeContainer
 Derived from: [CAttributeManager](#cattributemanager)
@@ -1505,8 +1759,12 @@ Type | Name
 `int32` | m_iExternalItemProviderRegisteredToken
 `uint64` | m_ullRegisteredAsItemID
 
+---
+
 ## C_FuncRotating
 Derived from: [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_BaseFire
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -1517,6 +1775,8 @@ Type | Name
 `float32` | m_flStartScale
 `float32` | m_flScaleTime
 `uint32` | m_nFlags
+
+---
 
 ## CBasePlayerController
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -1540,7 +1800,11 @@ Type | Name
 `bool` | m_bIsLocalPlayerController
 `uint32` | m_iDesiredFOV
 
+---
+
 ## CPointTemplateAPI
+
+---
 
 ## C_DecoyProjectile
 Derived from: [C_BaseCSGrenadeProjectile](#c_basecsgrenadeprojectile), [C_BaseGrenade](#c_basegrenade), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -1551,8 +1815,12 @@ Type | Name
 `int32` | m_nClientLastKnownDecoyShotTick
 `GameTime_t` | m_flTimeParticleEffectSpawn
 
+---
+
 ## C_WaterBullet
 Derived from: [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_CSGO_PreviewPlayer
 Derived from: [C_CSPlayerPawn](#c_csplayerpawn), [C_CSPlayerPawnBase](#c_csplayerpawnbase), [C_BasePlayerPawn](#c_baseplayerpawn), [C_BaseCombatCharacter](#c_basecombatcharacter), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -1562,6 +1830,8 @@ Type | Name
 `CUtlString` | m_animgraph
 `CGlobalSymbol` | m_animgraphCharacterModeString
 `float32` | m_flInitialModelScale
+
+---
 
 ## CBaseAnimGraphController
 
@@ -1583,8 +1853,12 @@ Type | Name
 `bool` | m_bLastUpdateSkipped
 `GameTime_t` | m_flPrevAnimUpdateTime
 
+---
+
 ## CCSPointScriptEntity
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_C4
 Derived from: [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -1602,6 +1876,8 @@ Type | Name
 `int32` | m_nSpotRules
 `bool[7]` | m_bPlayedArmingBeeps
 `bool` | m_bBombPlanted
+
+---
 
 ## CBaseAnimGraph
 Derived from: [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -1622,13 +1898,21 @@ Type | Name
 `bool` | m_bRagdollClientSide
 `bool` | m_bHasAnimatedMaterialAttributes
 
+---
+
 ## C_PointEntity
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_MultiplayRules
 Derived from: [C_GameRules](#c_gamerules)
 
+---
+
 ## CBasePlayerControllerAPI
+
+---
 
 ## C_PathParticleRope
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -1652,7 +1936,11 @@ Type | Name
 `C_NetworkUtlVectorBase< bool >` | m_PathNodes_PinEnabled
 `C_NetworkUtlVectorBase< float32 >` | m_PathNodes_RadiusScale
 
+---
+
 ## CCSPointScriptExtensions_CCSWeaponBaseVData
+
+---
 
 ## C_SoundEventAABBEntity
 Derived from: [C_SoundEventEntity](#c_soundevententity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -1662,11 +1950,17 @@ Type | Name
 `Vector` | m_vMins
 `Vector` | m_vMaxs
 
+---
+
 ## C_WeaponP90
 Derived from: [C_CSWeaponBaseGun](#c_csweaponbasegun), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
+---
+
 ## CEnvSoundscapeAlias_snd_soundscape
 Derived from: [CEnvSoundscape](#cenvsoundscape), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_BasePlayerWeapon
 Derived from: [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -1680,6 +1974,8 @@ Type | Name
 `int32` | m_iClip1
 `int32` | m_iClip2
 `int32[2]` | m_pReserveAmmo
+
+---
 
 ## CBasePlayerWeaponVData
 
@@ -1708,6 +2004,8 @@ Type | Name
 `int32` | m_iSlot
 `int32` | m_iPosition
 `CUtlOrderedMap< WeaponSound_t, CSoundEventName >` | m_aShootSounds
+
+---
 
 ## C_Fish
 Derived from: [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -1738,6 +2036,8 @@ Type | Name
 `int32` | m_errorHistoryCount
 `float32` | m_averageError
 
+---
+
 ## CTimeline
 Derived from: [IntervalTimer](#intervaltimer)
 
@@ -1751,8 +2051,12 @@ Type | Name
 `TimelineCompression_t` | m_nCompressionType
 `bool` | m_bStopped
 
+---
+
 ## C_WeaponAWP
 Derived from: [C_CSWeaponBaseGun](#c_csweaponbasegun), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_BasePlayerPawn
 Derived from: [C_BaseCombatCharacter](#c_basecombatcharacter), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -1788,6 +2092,8 @@ Type | Name
 `CHandle< CBasePlayerController >` | m_hController
 `bool` | m_bIsSwappingToPredictableController
 
+---
+
 ## CAttributeManager
 
 Type | Name
@@ -1799,8 +2105,12 @@ Type | Name
 `attributeprovidertypes_t` | m_ProviderType
 `CUtlVector< CAttributeManager::cached_attribute_float_t >` | m_CachedResults
 
+---
+
 ## CLogicalEntity
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## CAnimGraphNetworkedVariables
 
@@ -1831,6 +2141,8 @@ Type | Name
 `int32` | m_nRandomSeedOffset
 `float32` | m_flLastTeleportTime
 
+---
+
 ## C_TriggerBuoyancy
 Derived from: [C_BaseTrigger](#c_basetrigger), [C_BaseToggle](#c_basetoggle), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -1838,6 +2150,8 @@ Type | Name
 ------------ | -------------
 `CBuoyancyHelper` | m_BuoyancyHelper
 `float32` | m_flFluidDensity
+
+---
 
 ## C_RopeKeyframe
 Derived from: [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -1886,6 +2200,8 @@ Type | Name
 `bitfield:1` | m_bNewDataThisFrame
 `bitfield:1` | m_bPhysicsInitted
 
+---
+
 ## C_GradientFog
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -1908,12 +2224,16 @@ Type | Name
 `bool` | m_bIsEnabled
 `bool` | m_bGradientFogNeedsTextures
 
+---
+
 ## EntitySpottedState_t
 
 Type | Name
 ------------ | -------------
 `bool` | m_bSpotted
 `uint32[2]` | m_bSpottedByMask
+
+---
 
 ## C_CSGO_TeamPreviewCamera
 Derived from: [C_CSGO_MapPreviewCameraPath](#c_csgo_mappreviewcamerapath), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -1928,6 +2248,8 @@ Type | Name
 `float32` | m_flDofFarBlurry
 `float32` | m_flDofTiltToGround
 
+---
+
 ## CCSPlayer_CameraServices
 Derived from: [CCSPlayerBase_CameraServices](#ccsplayerbase_cameraservices), [CPlayer_CameraServices](#cplayer_cameraservices)
 
@@ -1936,8 +2258,12 @@ Type | Name
 `float32` | m_flDeathCamTilt
 `Vector` | m_vClientScopeInaccuracy
 
+---
+
 ## C_CSGO_TeamSelectCounterTerroristPosition
 Derived from: [C_CSGO_TeamSelectCharacterPosition](#c_csgo_teamselectcharacterposition), [C_CSGO_TeamPreviewCharacterPosition](#c_csgo_teampreviewcharacterposition), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_EconWearable
 Derived from: [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -1947,8 +2273,12 @@ Type | Name
 `int32` | m_nForceSkin
 `bool` | m_bAlwaysAllow
 
+---
+
 ## CCSGO_WingmanIntroCharacterPosition
 Derived from: [C_CSGO_TeamIntroCharacterPosition](#c_csgo_teamintrocharacterposition), [C_CSGO_TeamPreviewCharacterPosition](#c_csgo_teampreviewcharacterposition), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## CSMatchStats_t
 Derived from: [CSPerRoundStats_t](#csperroundstats_t)
@@ -1961,8 +2291,12 @@ Type | Name
 `int32` | m_iEnemyKnifeKills
 `int32` | m_iEnemyTaserKills
 
+---
+
 ## C_BaseToggle
 Derived from: [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_EnvVolumetricFogVolume
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -1986,14 +2320,22 @@ Type | Name
 `bool` | m_bOverrideNoiseStrength
 `bool` | m_bAllowLPVIndirect
 
+---
+
 ## CWaterSplasher
 Derived from: [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_ModelPointEntity
 Derived from: [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
+---
+
 ## CCSObserver_ViewModelServices
 Derived from: [CPlayer_ViewModelServices](#cplayer_viewmodelservices)
+
+---
 
 ## C_FireSmoke
 Derived from: [C_BaseFire](#c_basefire), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -2014,11 +2356,17 @@ Type | Name
 `TimedEvent` | m_tParticleSpawn
 `CFireOverlay*` | m_pFireOverlay
 
+---
+
 ## C_WeaponRevolver
 Derived from: [C_CSWeaponBaseGun](#c_csweaponbasegun), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
+---
+
 ## C_FireFromAboveSprite
 Derived from: [C_Sprite](#c_sprite), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_EnvCombinedLightProbeVolume
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -2050,8 +2398,12 @@ Type | Name
 `int32` | m_Entity_nLightProbeAtlasZ
 `bool` | m_Entity_bEnabled
 
+---
+
 ## C_SoundOpvarSetOBBWindEntity
 Derived from: [C_SoundOpvarSetPointBase](#c_soundopvarsetpointbase), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## ActiveModelConfig_t
 
@@ -2062,11 +2414,17 @@ Type | Name
 `C_NetworkUtlVectorBase< CHandle< C_BaseModelEntity > >` | m_AssociatedEntities
 `C_NetworkUtlVectorBase< CUtlSymbolLarge >` | m_AssociatedEntityNames
 
+---
+
 ## C_WeaponMP5SD
 Derived from: [C_CSWeaponBaseGun](#c_csweaponbasegun), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
+---
+
 ## C_DynamicPropAlias_dynamic_prop
 Derived from: [C_DynamicProp](#c_dynamicprop), [C_BreakableProp](#c_breakableprop), [CBaseProp](#cbaseprop), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## CCSPlayer_BulletServices
 
@@ -2074,6 +2432,8 @@ Derived from: [C_DynamicProp](#c_dynamicprop), [C_BreakableProp](#c_breakablepro
 Type | Name
 ------------ | -------------
 `int32` | m_totalHitsOnServer
+
+---
 
 ## CLogicRelay
 Derived from: [CLogicalEntity](#clogicalentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -2088,12 +2448,16 @@ Type | Name
 `bool` | m_bFastRetrigger
 `bool` | m_bPassthoughCaller
 
+---
+
 ## C_PointCameraVFOV
 Derived from: [C_PointCamera](#c_pointcamera), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
 Type | Name
 ------------ | -------------
 `float32` | m_flVerticalFOV
+
+---
 
 ## CCSPlayer_ItemServices
 Derived from: [CPlayer_ItemServices](#cplayer_itemservices)
@@ -2103,6 +2467,8 @@ Type | Name
 `bool` | m_bHasDefuser
 `bool` | m_bHasHelmet
 `bool` | m_bHasHeavyArmor
+
+---
 
 ## C_BarnLight
 Derived from: [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -2183,6 +2549,8 @@ Type | Name
 `bool` | m_bInitialBoneSetup
 `C_NetworkUtlVectorBase< uint16 >` | m_VisClusters
 
+---
+
 ## C_TonemapController2
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -2197,8 +2565,12 @@ Type | Name
 `float32` | m_flExposureAdaptationSpeedDown
 `float32` | m_flTonemapEVSmoothingRange
 
+---
+
 ## C_WeaponG3SG1
 Derived from: [C_CSWeaponBaseGun](#c_csweaponbasegun), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## CFuncWater
 Derived from: [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -2207,8 +2579,12 @@ Type | Name
 ------------ | -------------
 `CBuoyancyHelper` | m_BuoyancyHelper
 
+---
+
 ## C_SoundOpvarSetAutoRoomEntity
 Derived from: [C_SoundOpvarSetPointEntity](#c_soundopvarsetpointentity), [C_SoundOpvarSetPointBase](#c_soundopvarsetpointbase), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_EconEntity
 Derived from: [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -2236,8 +2612,12 @@ Type | Name
 `CHandle< C_BaseEntity >` | m_hOldProvidee
 `CUtlVector< C_EconEntity::AttachedModelData_t >` | m_vecAttachedModels
 
+---
+
 ## C_WeaponSG556
 Derived from: [C_CSWeaponBaseGun](#c_csweaponbasegun), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_RectLight
 Derived from: [C_BarnLight](#c_barnlight), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -2245,6 +2625,8 @@ Derived from: [C_BarnLight](#c_barnlight), [C_BaseModelEntity](#c_basemodelentit
 Type | Name
 ------------ | -------------
 `bool` | m_bShowLight
+
+---
 
 ## C_ParticleSystem
 Derived from: [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -2276,14 +2658,22 @@ Type | Name
 `bool` | m_bOldActive
 `bool` | m_bOldFrozen
 
+---
+
 ## C_CSGO_TeamPreviewModel
 Derived from: [C_CSGO_PreviewPlayer](#c_csgo_previewplayer), [C_CSPlayerPawn](#c_csplayerpawn), [C_CSPlayerPawnBase](#c_csplayerpawnbase), [C_BasePlayerPawn](#c_baseplayerpawn), [C_BaseCombatCharacter](#c_basecombatcharacter), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_WeaponGlock
 Derived from: [C_CSWeaponBaseGun](#c_csweaponbasegun), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
+---
+
 ## CEnvSoundscapeTriggerableAlias_snd_soundscape_triggerable
 Derived from: [CEnvSoundscapeTriggerable](#cenvsoundscapetriggerable), [CEnvSoundscape](#cenvsoundscape), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_CSGameRulesProxy
 Derived from: [C_GameRulesProxy](#c_gamerulesproxy), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -2291,6 +2681,8 @@ Derived from: [C_GameRulesProxy](#c_gamerulesproxy), [C_BaseEntity](#c_baseentit
 Type | Name
 ------------ | -------------
 `C_CSGameRules*` | m_pGameRules
+
+---
 
 ## CPlayer_ObserverServices
 
@@ -2304,11 +2696,17 @@ Type | Name
 `float32` | m_flObserverChaseDistance
 `GameTime_t` | m_flObserverChaseDistanceCalcTime
 
+---
+
 ## CPlayer_WaterServices
 
 
+---
+
 ## C_CSGO_EndOfMatchLineupEnd
 Derived from: [C_CSGO_EndOfMatchLineupEndpoint](#c_csgo_endofmatchlineupendpoint), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## SequenceHistory_t
 
@@ -2321,12 +2719,16 @@ Type | Name
 `float32` | m_flPlaybackRate
 `float32` | m_flCyclesPerSecond
 
+---
+
 ## C_Multimeter
 Derived from: [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
 Type | Name
 ------------ | -------------
 `CHandle< C_PlantedC4 >` | m_hTargetC4
+
+---
 
 ## C_CsmFovOverride
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -2335,6 +2737,8 @@ Type | Name
 ------------ | -------------
 `CUtlString` | m_cameraName
 `float32` | m_flCsmFovOverrideValue
+
+---
 
 ## C_EnvDecal
 Derived from: [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -2351,8 +2755,12 @@ Type | Name
 `bool` | m_bProjectOnWater
 `float32` | m_flDepthSortBias
 
+---
+
 ## CCSGameModeRules_Noop
 Derived from: [CCSGameModeRules](#ccsgamemoderules)
+
+---
 
 ## C_ColorCorrection
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -2378,8 +2786,12 @@ Type | Name
 `float32[1]` | m_flFadeStartTime
 `float32[1]` | m_flFadeDuration
 
+---
+
 ## CHostageRescueZoneShim
 Derived from: [C_BaseTrigger](#c_basetrigger), [C_BaseToggle](#c_basetoggle), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## CModelState
 
@@ -2393,14 +2805,20 @@ Type | Name
 `int8` | m_nForceLOD
 `int8` | m_nClothUpdateFlags
 
+---
+
 ## C_WeaponP250
 Derived from: [C_CSWeaponBaseGun](#c_csweaponbasegun), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_EconEntity::AttachedModelData_t
 
 Type | Name
 ------------ | -------------
 `int32` | m_iModelDisplayFlags
+
+---
 
 ## CAttributeList
 
@@ -2409,17 +2827,27 @@ Type | Name
 `C_UtlVectorEmbeddedNetworkVar< CEconItemAttribute >` | m_Attributes
 `CAttributeManager*` | m_pManager
 
+---
+
 ## C_TeamplayRules
 Derived from: [C_MultiplayRules](#c_multiplayrules), [C_GameRules](#c_gamerules)
+
+---
 
 ## C_CSGO_CounterTerroristWingmanIntroCamera
 Derived from: [C_CSGO_TeamPreviewCamera](#c_csgo_teampreviewcamera), [C_CSGO_MapPreviewCameraPath](#c_csgo_mappreviewcamerapath), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
+---
+
 ## C_WeaponNOVA
 Derived from: [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
+---
+
 ## C_HEGrenadeProjectile
 Derived from: [C_BaseCSGrenadeProjectile](#c_basecsgrenadeprojectile), [C_BaseGrenade](#c_basegrenade), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_BaseDoor
 Derived from: [C_BaseToggle](#c_basetoggle), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -2427,6 +2855,8 @@ Derived from: [C_BaseToggle](#c_basetoggle), [C_BaseModelEntity](#c_basemodelent
 Type | Name
 ------------ | -------------
 `bool` | m_bIsUsable
+
+---
 
 ## CGrenadeTracer
 Derived from: [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -2436,12 +2866,16 @@ Type | Name
 `float32` | m_flTracerDuration
 `GrenadeType_t` | m_nType
 
+---
+
 ## CBombTarget
 Derived from: [C_BaseTrigger](#c_basetrigger), [C_BaseToggle](#c_basetoggle), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
 Type | Name
 ------------ | -------------
 `bool` | m_bBombPlantedHere
+
+---
 
 ## C_PointClientUIDialog
 Derived from: [C_BaseClientUIEntity](#c_baseclientuientity), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -2451,6 +2885,8 @@ Type | Name
 `CHandle< C_BaseEntity >` | m_hActivator
 `bool` | m_bStartEnabled
 
+---
+
 ## CCSGameModeRules_ArmsRace
 Derived from: [CCSGameModeRules](#ccsgamemoderules)
 
@@ -2458,12 +2894,16 @@ Type | Name
 ------------ | -------------
 `C_NetworkUtlVectorBase< CUtlString >` | m_WeaponSequence
 
+---
+
 ## CPointChildModifier
 Derived from: [C_PointEntity](#c_pointentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
 Type | Name
 ------------ | -------------
 `bool` | m_bOrphanInsteadOfDeletingChildrenOnRemove
+
+---
 
 ## CDamageRecord
 
@@ -2485,8 +2925,12 @@ Type | Name
 `bool` | m_bIsOtherEnemy
 `EKillTypes_t` | m_killType
 
+---
+
 ## C_InfoLadderDismount
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## CCSPlayerController_DamageServices
 
@@ -2495,6 +2939,8 @@ Type | Name
 ------------ | -------------
 `int32` | m_nSendUpdate
 `C_UtlVectorEmbeddedNetworkVar< CDamageRecord >` | m_DamageList
+
+---
 
 ## CRenderComponent
 Derived from: [CEntityComponent](#centitycomponent)
@@ -2507,12 +2953,16 @@ Type | Name
 `bool` | m_bEnableRendering
 `bool` | m_bInterpolationReadyToDraw
 
+---
+
 ## CEnvSoundscapeProxy
 Derived from: [CEnvSoundscape](#cenvsoundscape), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
 Type | Name
 ------------ | -------------
 `CUtlSymbolLarge` | m_MainSoundscapeName
+
+---
 
 ## C_SoundEventOBBEntity
 Derived from: [C_SoundEventEntity](#c_soundevententity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -2521,6 +2971,8 @@ Type | Name
 ------------ | -------------
 `Vector` | m_vMins
 `Vector` | m_vMaxs
+
+---
 
 ## CLightComponent
 Derived from: [CEntityComponent](#centitycomponent)
@@ -2594,10 +3046,16 @@ Type | Name
 `float32` | m_flCapsuleLength
 `float32` | m_flMinRoughness
 
+---
+
 ## C_CSGO_CounterTerroristTeamIntroCamera
 Derived from: [C_CSGO_TeamPreviewCamera](#c_csgo_teampreviewcamera), [C_CSGO_MapPreviewCameraPath](#c_csgo_mappreviewcamerapath), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
+---
+
 ## CEntityComponent
+
+---
 
 ## C_EconItemView
 
@@ -2634,6 +3092,8 @@ Type | Name
 `char[161]` | m_szCustomNameOverride
 `bool` | m_bInitializedTags
 
+---
+
 ## C_HandleTest
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -2642,6 +3102,8 @@ Type | Name
 `CHandle< C_BaseEntity >` | m_Handle
 `bool` | m_bSendHandle
 
+---
+
 ## C_EnvWindClientside
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -2649,8 +3111,12 @@ Type | Name
 ------------ | -------------
 `C_EnvWindShared` | m_EnvWindShared
 
+---
+
 ## C_WeaponMAC10
 Derived from: [C_CSWeaponBaseGun](#c_csweaponbasegun), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_PointClientUIWorldTextPanel
 Derived from: [C_PointClientUIWorldPanel](#c_pointclientuiworldpanel), [C_BaseClientUIEntity](#c_baseclientuientity), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -2659,8 +3125,12 @@ Type | Name
 ------------ | -------------
 `char[512]` | m_messageText
 
+---
+
 ## CCSPlayer_UseServices
 Derived from: [CPlayer_UseServices](#cplayer_useservices)
+
+---
 
 ## CPlayer_MovementServices
 
@@ -2683,6 +3153,8 @@ Type | Name
 `Vector` | m_vecLastMovementImpulses
 `QAngle` | m_vecOldViewAngles
 
+---
+
 ## CEnvSoundscape
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -2699,6 +3171,8 @@ Type | Name
 `bool` | m_bDisabled
 `CUtlSymbolLarge` | m_soundscapeName
 `uint32` | m_soundEventHash
+
+---
 
 ## CBasePlayerVData
 
@@ -2720,6 +3194,8 @@ Type | Name
 `float32` | m_flUseAngleTolerance
 `float32` | m_flCrouchTime
 
+---
+
 ## CCSPlayerController_InGameMoneyServices
 
 
@@ -2730,6 +3206,8 @@ Type | Name
 `int32` | m_iTotalCashSpent
 `int32` | m_iCashSpentThisRound
 
+---
+
 ## C_EnvWindShared::WindVariationEvent_t
 
 Type | Name
@@ -2737,17 +3215,27 @@ Type | Name
 `float32` | m_flWindAngleVariation
 `float32` | m_flWindSpeedVariation
 
+---
+
 ## C_WeaponUSPSilencer
 Derived from: [C_CSWeaponBaseGun](#c_csweaponbasegun), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## CSpriteOriented
 Derived from: [C_Sprite](#c_sprite), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
+---
+
 ## C_CSGO_EndOfMatchLineupStart
 Derived from: [C_CSGO_EndOfMatchLineupEndpoint](#c_csgo_endofmatchlineupendpoint), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
+---
+
 ## C_WeaponFamas
 Derived from: [C_CSWeaponBaseGun](#c_csweaponbasegun), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_EnvParticleGlow
 Derived from: [C_ParticleSystem](#c_particlesystem), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -2759,6 +3247,8 @@ Type | Name
 `float32` | m_flSelfIllumScale
 `Color` | m_ColorTint
 `CStrongHandle< InfoForResourceTypeCTextureBase >` | m_hTextureOverride
+
+---
 
 ## C_SoundEventEntity
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -2781,11 +3271,17 @@ Type | Name
 `int32` | m_nEntityIndexSelection
 `bitfield:1` | m_bClientSideOnly
 
+---
+
 ## C_CSGO_TeamIntroCharacterPosition
 Derived from: [C_CSGO_TeamPreviewCharacterPosition](#c_csgo_teampreviewcharacterposition), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
+---
+
 ## C_CSGO_PreviewModelAlias_csgo_item_previewmodel
 Derived from: [C_CSGO_PreviewModel](#c_csgo_previewmodel), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_Sun
 Derived from: [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -2811,8 +3307,12 @@ Type | Name
 `float32` | m_flAlphaHdr
 `float32` | m_flFarZScale
 
+---
+
 ## C_CSGO_EndOfMatchLineupEndpoint
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## CCSPlayerController_ActionTrackingServices
 
@@ -2825,12 +3325,16 @@ Type | Name
 `int32` | m_iNumRoundKillsHeadshots
 `uint32` | m_unTotalRoundDamageDealt
 
+---
+
 ## CHitboxComponent
 Derived from: [CEntityComponent](#centitycomponent)
 
 Type | Name
 ------------ | -------------
 `uint32[1]` | m_bvDisabledHitGroups
+
+---
 
 ## C_ColorCorrectionVolume
 Derived from: [C_BaseTrigger](#c_basetrigger), [C_BaseToggle](#c_basetoggle), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -2847,8 +3351,12 @@ Type | Name
 `float32` | m_Weight
 `char[512]` | m_lookupFilename
 
+---
+
 ## C_PrecipitationBlocker
 Derived from: [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_BulletHitModel
 Derived from: [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -2861,6 +3369,8 @@ Type | Name
 `bool` | m_bIsHit
 `float32` | m_flTimeCreated
 `Vector` | m_vecStartPos
+
+---
 
 ## C_MapVetoPickController
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -2885,7 +3395,11 @@ Type | Name
 `int32` | m_nPostDataUpdateTick
 `bool` | m_bDisabledHud
 
+---
+
 ## CSharedGapTypeQueryRegistration
+
+---
 
 ## C_OmniLight
 Derived from: [C_BarnLight](#c_barnlight), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -2896,17 +3410,25 @@ Type | Name
 `float32` | m_flOuterAngle
 `bool` | m_bShowLight
 
+---
+
 ## C_FireCrackerBlast
 Derived from: [C_Inferno](#c_inferno), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
+---
+
 ## C_WeaponMP9
 Derived from: [C_CSWeaponBaseGun](#c_csweaponbasegun), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## WeaponPurchaseTracker_t
 
 Type | Name
 ------------ | -------------
 `C_UtlVectorEmbeddedNetworkVar< WeaponPurchaseCount_t >` | m_weaponPurchases
+
+---
 
 ## C_RetakeGameRules
 
@@ -2918,6 +3440,8 @@ Type | Name
 `int32` | m_iFirstSecondHalfRound
 `int32` | m_iBombSite
 
+---
+
 ## EngineCountdownTimer
 
 Type | Name
@@ -2926,8 +3450,12 @@ Type | Name
 `float32` | m_timestamp
 `float32` | m_timescale
 
+---
+
 ## CCSPlayer_GlowServices
 
+
+---
 
 ## C_BaseFlex::Emphasized_Phoneme
 
@@ -2939,6 +3467,8 @@ Type | Name
 `bool` | m_bBasechecked
 `bool` | m_bValid
 
+---
+
 ## IntervalTimer
 
 Type | Name
@@ -2946,8 +3476,12 @@ Type | Name
 `GameTime_t` | m_timestamp
 `WorldGroupId_t` | m_nWorldGroupId
 
+---
+
 ## C_WeaponSSG08
 Derived from: [C_CSWeaponBaseGun](#c_csweaponbasegun), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_FuncLadder
 Derived from: [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -2964,8 +3498,12 @@ Type | Name
 `bool` | m_bFakeLadder
 `bool` | m_bHasSlack
 
+---
+
 ## C_SoundOpvarSetOBBEntity
 Derived from: [C_SoundOpvarSetAABBEntity](#c_soundopvarsetaabbentity), [C_SoundOpvarSetPointEntity](#c_soundopvarsetpointentity), [C_SoundOpvarSetPointBase](#c_soundopvarsetpointbase), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## CPlayer_WeaponServices
 
@@ -2977,6 +3515,8 @@ Type | Name
 `CHandle< C_BasePlayerWeapon >` | m_hLastWeapon
 `uint16[32]` | m_iAmmo
 
+---
+
 ## CAttributeManager::cached_attribute_float_t
 
 Type | Name
@@ -2984,6 +3524,8 @@ Type | Name
 `float32` | flIn
 `CUtlSymbolLarge` | iAttribHook
 `float32` | flOut
+
+---
 
 ## C_BaseGrenade
 Derived from: [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -3003,11 +3545,15 @@ Type | Name
 `GameTime_t` | m_flNextAttack
 `CHandle< C_CSPlayerPawn >` | m_hOriginalThrower
 
+---
+
 ## CCSGameModeRules
 
 Type | Name
 ------------ | -------------
 `CNetworkVarChainer` | __m_pChainEntity
+
+---
 
 ## VPhysicsCollisionAttribute_t
 
@@ -3021,6 +3567,8 @@ Type | Name
 `uint16` | m_nHierarchyId
 `uint8` | m_nCollisionGroup
 `uint8` | m_nCollisionFunctionMask
+
+---
 
 ## C_EnvVolumetricFogController
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -3062,8 +3610,12 @@ Type | Name
 `Vector` | m_vNoiseScale
 `bool` | m_bFirstTime
 
+---
+
 ## C_WeaponTec9
 Derived from: [C_CSWeaponBaseGun](#c_csweaponbasegun), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_PointCommentaryNode
 Derived from: [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -3084,11 +3636,17 @@ Type | Name
 `CHandle< C_BaseEntity >` | m_hViewPosition
 `bool` | m_bRestartAfterRestore
 
+---
+
 ## CCSObserver_CameraServices
 Derived from: [CCSPlayerBase_CameraServices](#ccsplayerbase_cameraservices), [CPlayer_CameraServices](#cplayer_cameraservices)
 
+---
+
 ## CCSClientPointScriptEntity
 Derived from: [CCSPointScriptEntity](#ccspointscriptentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## audioparams_t
 
@@ -3100,8 +3658,12 @@ Type | Name
 `int32` | soundscapeEntityListIndex
 `uint32` | soundEventHash
 
+---
+
 ## C_CS2WeaponModuleBase
 Derived from: [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_InfoVisibilityBox
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -3112,6 +3674,8 @@ Type | Name
 `Vector` | m_vBoxSize
 `bool` | m_bEnabled
 
+---
+
 ## C_FireSprite
 Derived from: [C_Sprite](#c_sprite), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -3120,8 +3684,12 @@ Type | Name
 `Vector` | m_vecMoveDir
 `bool` | m_bFadeFromAbove
 
+---
+
 ## C_CSGO_TeamIntroTerroristPosition
 Derived from: [C_CSGO_TeamIntroCharacterPosition](#c_csgo_teamintrocharacterposition), [C_CSGO_TeamPreviewCharacterPosition](#c_csgo_teampreviewcharacterposition), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_Precipitation
 Derived from: [C_BaseTrigger](#c_basetrigger), [C_BaseToggle](#c_basetoggle), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -3137,6 +3705,8 @@ Type | Name
 `bool` | m_bHasSimulatedSinceLastSceneObjectUpdate
 `int32` | m_nAvailableSheetSequencesMaxIndex
 
+---
+
 ## CPrecipitationVData
 
 
@@ -3150,6 +3720,8 @@ Type | Name
 `int32` | m_nRTEnvCPComponent
 `CUtlString` | m_szModifier
 
+---
+
 ## CBuoyancyHelper
 
 Type | Name
@@ -3161,6 +3733,8 @@ Type | Name
 `CUtlVector< float32 >` | m_vecFractionOfWheelSubmergedForWheelDrag
 `CUtlVector< float32 >` | m_vecWheelDrag
 
+---
+
 ## C_BaseClientUIEntity
 Derived from: [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -3171,6 +3745,8 @@ Type | Name
 `CUtlSymbolLarge` | m_PanelClassName
 `CUtlSymbolLarge` | m_PanelID
 
+---
+
 ## C_FuncTrackTrain
 Derived from: [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -3179,6 +3755,8 @@ Type | Name
 `int32` | m_nLongAxis
 `float32` | m_flRadius
 `float32` | m_flLineLength
+
+---
 
 ## CCSPlayer_ActionTrackingServices
 
@@ -3189,6 +3767,8 @@ Type | Name
 `bool` | m_bIsRescuing
 `WeaponPurchaseTracker_t` | m_weaponPurchasesThisMatch
 `WeaponPurchaseTracker_t` | m_weaponPurchasesThisRound
+
+---
 
 ## shard_model_desc_t
 
@@ -3208,11 +3788,15 @@ Type | Name
 `bool` | m_bParentFrozen
 `CUtlStringToken` | m_SurfacePropStringToken
 
+---
+
 ## C_SceneEntity::QueuedEvents_t
 
 Type | Name
 ------------ | -------------
 `float32` | starttime
+
+---
 
 ## CBaseProp
 Derived from: [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -3224,10 +3808,16 @@ Type | Name
 `bool` | m_bConformToCollisionBounds
 `matrix3x4_t` | m_mPreferredCatchTransform
 
+---
+
 ## C_CSGO_PreviewPlayerAlias_csgo_player_previewmodel
 Derived from: [C_CSGO_PreviewPlayer](#c_csgo_previewplayer), [C_CSPlayerPawn](#c_csplayerpawn), [C_CSPlayerPawnBase](#c_csplayerpawnbase), [C_BasePlayerPawn](#c_baseplayerpawn), [C_BaseCombatCharacter](#c_basecombatcharacter), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
+---
+
 ## CCSPointScriptExtensions_observer
+
+---
 
 ## CPointTemplate
 Derived from: [CLogicalEntity](#clogicalentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -3247,8 +3837,12 @@ Type | Name
 `HSCRIPT` | m_ScriptSpawnCallback
 `HSCRIPT` | m_ScriptCallbackScope
 
+---
+
 ## C_WeaponHKP2000
 Derived from: [C_CSWeaponBaseGun](#c_csweaponbasegun), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_CSGO_PreviewModel
 Derived from: [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -3262,6 +3856,8 @@ Type | Name
 `float32` | m_flInitialModelScale
 `CUtlString` | m_sInitialWeaponState
 
+---
+
 ## CInfoDynamicShadowHint
 Derived from: [C_PointEntity](#c_pointentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -3273,15 +3869,25 @@ Type | Name
 `int32` | m_nLightChoice
 `CHandle< C_BaseEntity >` | m_hLight
 
+---
+
 ## CTakeDamageInfoAPI
 
+---
+
 ## C_BaseEntityAPI
+
+---
 
 ## C_WeaponXM1014
 Derived from: [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
+---
+
 ## C_MapPreviewParticleSystem
 Derived from: [C_ParticleSystem](#c_particlesystem), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## CGlowProperty
 
@@ -3298,6 +3904,8 @@ Type | Name
 `float32` | m_flGlowStartTime
 `bool` | m_bEligibleForScreenHighlight
 `bool` | m_bGlowing
+
+---
 
 ## C_TriggerPhysics
 Derived from: [C_BaseTrigger](#c_basetrigger), [C_BaseToggle](#c_basetoggle), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -3318,6 +3926,8 @@ Type | Name
 `Vector` | m_vecLinearForceDirection
 `bool` | m_bConvertToDebrisWhenPossible
 
+---
+
 ## CCSPlayer_HostageServices
 
 
@@ -3326,8 +3936,12 @@ Type | Name
 `CHandle< C_BaseEntity >` | m_hCarriedHostage
 `CHandle< C_BaseEntity >` | m_hCarriedHostageProp
 
+---
+
 ## C_LightDirectionalEntity
 Derived from: [C_LightEntity](#c_lightentity), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_EnvCubemap
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -3353,6 +3967,8 @@ Type | Name
 `bool` | m_Entity_bCopyDiffuseFromDefaultCubemap
 `bool` | m_Entity_bEnabled
 
+---
+
 ## C_PredictedViewModel
 Derived from: [C_BaseViewModel](#c_baseviewmodel), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -3362,11 +3978,17 @@ Type | Name
 `QAngle` | m_targetSpeed
 `QAngle` | m_currentSpeed
 
+---
+
 ## C_WeaponBizon
 Derived from: [C_CSWeaponBaseGun](#c_csweaponbasegun), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
+---
+
 ## C_AK47
 Derived from: [C_CSWeaponBaseGun](#c_csweaponbasegun), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_PointValueRemapper
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -3399,6 +4021,8 @@ Type | Name
 `GameTime_t` | m_flPreviousUpdateTickTime
 `Vector` | m_vecPreviousTestPoint
 
+---
+
 ## C_Knife
 Derived from: [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -3406,8 +4030,12 @@ Type | Name
 ------------ | -------------
 `bool` | m_bFirstAttack
 
+---
+
 ## C_EnvCubemapBox
 Derived from: [C_EnvCubemap](#c_envcubemap), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_ItemDogtags
 Derived from: [C_Item](#c_item), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -3417,8 +4045,12 @@ Type | Name
 `CHandle< C_CSPlayerPawn >` | m_OwningPlayer
 `CHandle< C_CSPlayerPawn >` | m_KillingPlayer
 
+---
+
 ## C_CSGO_EndOfMatchCamera
 Derived from: [C_CSGO_TeamPreviewCamera](#c_csgo_teampreviewcamera), [C_CSGO_MapPreviewCameraPath](#c_csgo_mappreviewcamerapath), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_SoundOpvarSetPointBase
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -3431,8 +4063,12 @@ Type | Name
 `int32` | m_iOpvarIndex
 `bool` | m_bUseAutoCompare
 
+---
+
 ## C_PhysBox
 Derived from: [C_Breakable](#c_breakable), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## CCSPlayer_BuyServices
 
@@ -3441,7 +4077,11 @@ Type | Name
 ------------ | -------------
 `C_UtlVectorEmbeddedNetworkVar< SellbackPurchaseEntry_t >` | m_vecSellbackPurchaseEntries
 
+---
+
 ## CPathSimpleAPI
+
+---
 
 ## C_WeaponTaser
 Derived from: [C_CSWeaponBaseGun](#c_csweaponbasegun), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -3451,8 +4091,12 @@ Type | Name
 `GameTime_t` | m_fFireTime
 `int32` | m_nLastAttackTick
 
+---
+
 ## C_PhysicsPropMultiplayer
 Derived from: [C_PhysicsProp](#c_physicsprop), [C_BreakableProp](#c_breakableprop), [CBaseProp](#cbaseprop), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## CInfoDynamicShadowHintBox
 Derived from: [CInfoDynamicShadowHint](#cinfodynamicshadowhint), [C_PointEntity](#c_pointentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -3462,8 +4106,12 @@ Type | Name
 `Vector` | m_vBoxMins
 `Vector` | m_vBoxMaxs
 
+---
+
 ## C_SoundOpvarSetPathCornerEntity
 Derived from: [C_SoundOpvarSetPointEntity](#c_soundopvarsetpointentity), [C_SoundOpvarSetPointBase](#c_soundopvarsetpointbase), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_EnvCubemapFog
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -3489,8 +4137,12 @@ Type | Name
 `bool` | m_bHasHeightFogEnd
 `bool` | m_bFirstTime
 
+---
+
 ## C_WeaponSawedoff
 Derived from: [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## CCollisionProperty
 
@@ -3514,6 +4166,8 @@ Type | Name
 `Vector` | m_vCapsuleCenter2
 `float32` | m_flCapsuleRadius
 
+---
+
 ## CNetworkedSequenceOperation
 
 Type | Name
@@ -3526,6 +4180,8 @@ Type | Name
 `bool` | m_bDiscontinuity
 `float32` | m_flPrevCycleFromDiscontinuity
 `float32` | m_flPrevCycleForAnimEventDetection
+
+---
 
 ## C_PlayerSprayDecal
 Derived from: [C_ModelPointEntity](#c_modelpointentity), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -3549,12 +4205,16 @@ Type | Name
 `uint8[128]` | m_ubSignature
 `CPlayerSprayDecalRenderHelper` | m_SprayRenderHelper
 
+---
+
 ## EntityRenderAttribute_t
 
 Type | Name
 ------------ | -------------
 `CUtlStringToken` | m_ID
 `Vector4D` | m_Values
+
+---
 
 ## C_ShatterGlassShardPhysics
 Derived from: [C_PhysicsProp](#c_physicsprop), [C_BreakableProp](#c_breakableprop), [CBaseProp](#cbaseprop), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -3563,8 +4223,12 @@ Type | Name
 ------------ | -------------
 `shard_model_desc_t` | m_ShardDesc
 
+---
+
 ## C_WeaponElite
 Derived from: [C_CSWeaponBaseGun](#c_csweaponbasegun), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_LightEntity
 Derived from: [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -3572,6 +4236,8 @@ Derived from: [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseent
 Type | Name
 ------------ | -------------
 `CLightComponent*` | m_CLightComponent
+
+---
 
 ## C_PlayerVisibility
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -3584,6 +4250,8 @@ Type | Name
 `float32` | m_flFadeTime
 `bool` | m_bStartDisabled
 `bool` | m_bIsEnabled
+
+---
 
 ## fogparams_t
 
@@ -3615,6 +4283,8 @@ Type | Name
 `bool` | m_bNoReflectionFog
 `bool` | m_bPadding
 
+---
+
 ## C_BaseFlex
 Derived from: [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -3640,6 +4310,8 @@ Type | Name
 `Vector` | m_vEyeOcclusionRendererHalfExtent
 `C_BaseFlex::Emphasized_Phoneme[3]` | m_PhonemeClasses
 
+---
+
 ## C_EnvSky
 Derived from: [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -3658,11 +4330,17 @@ Type | Name
 `float32` | m_flFogMaxEnd
 `bool` | m_bEnabled
 
+---
+
 ## CInfoTarget
 Derived from: [C_PointEntity](#c_pointentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
+---
+
 ## C_CSGO_TeamIntroCounterTerroristPosition
 Derived from: [C_CSGO_TeamIntroCharacterPosition](#c_csgo_teamintrocharacterposition), [C_CSGO_TeamPreviewCharacterPosition](#c_csgo_teampreviewcharacterposition), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_DynamicProp
 Derived from: [C_BreakableProp](#c_breakableprop), [CBaseProp](#cbaseprop), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -3693,6 +4371,8 @@ Type | Name
 `Vector` | m_vecCachedRenderMins
 `Vector` | m_vecCachedRenderMaxs
 
+---
+
 ## CPropDataComponent
 Derived from: [CEntityComponent](#centitycomponent)
 
@@ -3709,13 +4389,21 @@ Type | Name
 `int32` | m_nDisableTakePhysicsDamageSpawnFlag
 `int32` | m_nMotionDisabledSpawnFlag
 
+---
+
 ## C_WeaponSCAR20
 Derived from: [C_CSWeaponBaseGun](#c_csweaponbasegun), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_DecoyGrenade
 Derived from: [C_BaseCSGrenade](#c_basecsgrenade), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
+---
+
 ## CCSPointScriptExtensions_player
+
+---
 
 ## C_KeychainModule
 Derived from: [C_CS2WeaponModuleBase](#c_cs2weaponmodulebase), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -3724,6 +4412,8 @@ Type | Name
 ------------ | -------------
 `uint32` | m_nKeychainDefID
 `uint32` | m_nKeychainSeed
+
+---
 
 ## CCitadelSoundOpvarSetOBB
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -3739,6 +4429,8 @@ Type | Name
 `Vector` | m_vDistanceOuterMaxs
 `int32` | m_nAABBDirection
 
+---
+
 ## SellbackPurchaseEntry_t
 
 Type | Name
@@ -3749,8 +4441,12 @@ Type | Name
 `bool` | m_bPrevHelmet
 `CEntityHandle` | m_hItem
 
+---
+
 ## C_SingleplayRules
 Derived from: [C_GameRules](#c_gamerules)
+
+---
 
 ## C_LocalTempEntity
 Derived from: [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -3783,12 +4479,16 @@ Type | Name
 `Vector` | m_vecPrevAbsOrigin
 `Vector` | m_vecTempEntAcceleration
 
+---
+
 ## C_EnvWindShared::WindAveEvent_t
 
 Type | Name
 ------------ | -------------
 `float32` | m_flStartWindSpeed
 `float32` | m_flAveWindSpeed
+
+---
 
 ## C_MolotovProjectile
 Derived from: [C_BaseCSGrenadeProjectile](#c_basecsgrenadeprojectile), [C_BaseGrenade](#c_basegrenade), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -3797,11 +4497,17 @@ Type | Name
 ------------ | -------------
 `bool` | m_bIsIncGrenade
 
+---
+
 ## C_LightEnvironmentEntity
 Derived from: [C_LightDirectionalEntity](#c_lightdirectionalentity), [C_LightEntity](#c_lightentity), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
+---
+
 ## C_WeaponUMP45
 Derived from: [C_CSWeaponBaseGun](#c_csweaponbasegun), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## CInfoOffscreenPanoramaTexture
 Derived from: [C_PointEntity](#c_pointentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -3818,6 +4524,8 @@ Type | Name
 `C_NetworkUtlVectorBase< CUtlSymbolLarge >` | m_vecCSSClasses
 `bool` | m_bCheckCSSClasses
 
+---
+
 ## C_DynamicLight
 Derived from: [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -3830,6 +4538,8 @@ Type | Name
 `float32` | m_InnerAngle
 `float32` | m_OuterAngle
 `float32` | m_SpotRadius
+
+---
 
 ## C_CSWeaponBase
 Derived from: [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -3910,8 +4620,12 @@ Type | Name
 `GameTime_t` | m_flLastMagDropRequestTime
 `float32` | m_flWatTickOffset
 
+---
+
 ## C_TriggerVolume
 Derived from: [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_FuncElectrifiedVolume
 Derived from: [C_FuncBrush](#c_funcbrush), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -3921,6 +4635,8 @@ Type | Name
 `ParticleIndex_t` | m_nAmbientEffect
 `CUtlSymbolLarge` | m_EffectName
 `bool` | m_bState
+
+---
 
 ## CCSPlayer_WeaponServices
 Derived from: [CPlayer_WeaponServices](#cplayer_weaponservices)
@@ -3933,6 +4649,8 @@ Type | Name
 `uint32` | m_nOldShootPositionHistoryCount
 `uint32` | m_nOldInputHistoryCount
 
+---
+
 ## C_EnvDetailController
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -3940,6 +4658,8 @@ Type | Name
 ------------ | -------------
 `float32` | m_flFadeStartDist
 `float32` | m_flFadeEndDist
+
+---
 
 ## C_BaseEntity
 Derived from: [CEntityInstance](#centityinstance)
@@ -4029,6 +4749,8 @@ Type | Name
 `CUtlString` | m_sUniqueHammerID
 `BloodType` | m_nBloodType
 
+---
+
 ## CEntityIdentity
 
 Type | Name
@@ -4045,6 +4767,8 @@ Type | Name
 `CEntityIdentity*` | m_pPrevByClass
 `CEntityIdentity*` | m_pNextByClass
 
+---
+
 ## C_StattrakModule
 Derived from: [C_CS2WeaponModuleBase](#c_cs2weaponmodulebase), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -4052,12 +4776,16 @@ Type | Name
 ------------ | -------------
 `bool` | m_bKnife
 
+---
+
 ## C_PhysicsProp
 Derived from: [C_BreakableProp](#c_breakableprop), [CBaseProp](#cbaseprop), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
 Type | Name
 ------------ | -------------
 `bool` | m_bAwake
+
+---
 
 ## C_BreakableProp
 Derived from: [CBaseProp](#cbaseprop), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -4094,8 +4822,12 @@ Type | Name
 `CHandle< C_BaseEntity >` | m_hFlareEnt
 `bool` | m_noGhostCollision
 
+---
+
 ## C_FuncMoveLinear
 Derived from: [C_BaseToggle](#c_basetoggle), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_Beam
 Derived from: [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -4127,6 +4859,8 @@ Type | Name
 `Vector` | m_vecEndPos
 `CHandle< C_BaseEntity >` | m_hEndEntity
 
+---
+
 ## C_CSGO_TeamPreviewCharacterPosition
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -4141,8 +4875,12 @@ Type | Name
 `C_EconItemView` | m_glovesItem
 `C_EconItemView` | m_weaponItem
 
+---
+
 ## C_DynamicPropAlias_prop_dynamic_override
 Derived from: [C_DynamicProp](#c_dynamicprop), [C_BreakableProp](#c_breakableprop), [CBaseProp](#cbaseprop), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_EnvScreenOverlay
 Derived from: [C_PointEntity](#c_pointentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -4158,6 +4896,8 @@ Type | Name
 `int32` | m_iCachedDesiredOverlay
 `int32` | m_iCurrentOverlay
 `GameTime_t` | m_flCurrentOverlayTime
+
+---
 
 ## CCSWeaponBaseVData
 Derived from: [CBasePlayerWeaponVData](#cbaseplayerweaponvdata)
@@ -4257,6 +4997,8 @@ Type | Name
 `Vector` | m_vSmokeColor
 `CGlobalSymbol` | m_szAnimClass
 
+---
+
 ## C_PointWorldText
 Derived from: [C_ModelPointEntity](#c_modelpointentity), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -4279,6 +5021,8 @@ Type | Name
 `PointWorldTextJustifyHorizontal_t` | m_nJustifyHorizontal
 `PointWorldTextJustifyVertical_t` | m_nJustifyVertical
 `PointWorldTextReorientMode_t` | m_nReorientMode
+
+---
 
 ## CCSPlayerController
 Derived from: [CBasePlayerController](#cbaseplayercontroller), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -4352,8 +5096,12 @@ Type | Name
 `bool` | m_bIsPlayerNameDirty
 `bool` | m_bFireBulletsSeedSynchronized
 
+---
+
 ## C_WeaponFiveSeven
 Derived from: [C_CSWeaponBaseGun](#c_csweaponbasegun), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_BasePropDoor
 Derived from: [C_DynamicProp](#c_dynamicprop), [C_BreakableProp](#c_breakableprop), [CBaseProp](#cbaseprop), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -4368,8 +5116,12 @@ Type | Name
 `CHandle< C_BasePropDoor >` | m_hMaster
 `Vector` | m_vWhereToSetLightingOrigin
 
+---
+
 ## C_CSGO_TeamSelectTerroristPosition
 Derived from: [C_CSGO_TeamSelectCharacterPosition](#c_csgo_teamselectcharacterposition), [C_CSGO_TeamPreviewCharacterPosition](#c_csgo_teampreviewcharacterposition), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_NametagModule
 Derived from: [C_CS2WeaponModuleBase](#c_cs2weaponmodulebase), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -4377,6 +5129,8 @@ Derived from: [C_CS2WeaponModuleBase](#c_cs2weaponmodulebase), [CBaseAnimGraph](
 Type | Name
 ------------ | -------------
 `CUtlString` | m_strNametagString
+
+---
 
 ## C_PhysPropClientside
 Derived from: [C_BreakableProp](#c_breakableprop), [CBaseProp](#cbaseprop), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -4390,8 +5144,12 @@ Type | Name
 `Vector` | m_vecDamageDirection
 `DamageTypes_t` | m_nDamageType
 
+---
+
 ## C_CSGO_TeamSelectCamera
 Derived from: [C_CSGO_TeamPreviewCamera](#c_csgo_teampreviewcamera), [C_CSGO_MapPreviewCameraPath](#c_csgo_mappreviewcamerapath), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_SoundAreaEntityBase
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -4403,6 +5161,8 @@ Type | Name
 `CUtlSymbolLarge` | m_iszSoundAreaType
 `Vector` | m_vPos
 
+---
+
 ## C_FogController
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -4412,11 +5172,17 @@ Type | Name
 `bool` | m_bUseAngles
 `int32` | m_iChangedVariables
 
+---
+
 ## CPlayer_ItemServices
 
 
+---
+
 ## C_FuncBrush
 Derived from: [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## CInfoWorldLayer
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -4432,8 +5198,12 @@ Type | Name
 `uint32` | m_hLayerSpawnGroup
 `bool` | m_bWorldLayerActuallyVisible
 
+---
+
 ## C_NetTestBaseCombatCharacter
 Derived from: [C_BaseCombatCharacter](#c_basecombatcharacter), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_PhysMagnet
 Derived from: [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -4442,6 +5212,8 @@ Type | Name
 ------------ | -------------
 `CUtlVector< int32 >` | m_aAttachedObjectsFromServer
 `CUtlVector< CHandle< C_BaseEntity > >` | m_aAttachedObjects
+
+---
 
 ## C_FuncConveyor
 Derived from: [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -4457,6 +5229,8 @@ Type | Name
 `float32` | m_flCurrentConveyorOffset
 `float32` | m_flCurrentConveyorSpeed
 
+---
+
 ## CEntityInstance
 
 Type | Name
@@ -4466,6 +5240,8 @@ Type | Name
 `CScriptComponent*` | m_CScriptComponent
 `bool` | m_bVisibleinPVS
 
+---
+
 ## ServerAuthoritativeWeaponSlot_t
 
 Type | Name
@@ -4474,8 +5250,12 @@ Type | Name
 `uint16` | unSlot
 `uint16` | unItemDefIdx
 
+---
+
 ## CCSPlayer_DamageReactServices
 
+
+---
 
 ## C_BaseViewModel
 Derived from: [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -4499,14 +5279,22 @@ Type | Name
 `float32` | m_oldLayerStartTime
 `CHandle< C_BaseEntity >` | m_hControlPanel
 
+---
+
 ## C_PortraitWorldCallbackHandler
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## CHostageRescueZone
 Derived from: [CHostageRescueZoneShim](#chostagerescuezoneshim), [C_BaseTrigger](#c_basetrigger), [C_BaseToggle](#c_basetoggle), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
+---
+
 ## C_WeaponNegev
 Derived from: [C_CSWeaponBaseGun](#c_csweaponbasegun), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## CGameSceneNode
 
@@ -4546,8 +5334,12 @@ Type | Name
 `float32` | m_flClientLocalScale
 `Vector` | m_vRenderOrigin
 
+---
+
 ## C_IncendiaryGrenade
 Derived from: [C_MolotovGrenade](#c_molotovgrenade), [C_BaseCSGrenade](#c_basecsgrenade), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## CCSPointScript
 
@@ -4556,12 +5348,16 @@ Type | Name
 ------------ | -------------
 `CCSPointScriptEntity*` | m_pParent
 
+---
+
 ## C_CSObserverPawn
 Derived from: [C_CSPlayerPawnBase](#c_csplayerpawnbase), [C_BasePlayerPawn](#c_baseplayerpawn), [C_BaseCombatCharacter](#c_basecombatcharacter), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
 Type | Name
 ------------ | -------------
 `CEntityHandle` | m_hDetectParentChange
+
+---
 
 ## C_EntityFlame
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -4572,8 +5368,12 @@ Type | Name
 `CHandle< C_BaseEntity >` | m_hOldAttached
 `bool` | m_bCheapEffect
 
+---
+
 ## C_Breakable
 Derived from: [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## CCSObserver_ObserverServices
 Derived from: [CPlayer_ObserverServices](#cplayer_observerservices)
@@ -4589,11 +5389,17 @@ Type | Name
 `ObserverInterpState_t` | m_obsInterpState
 `bool` | m_bObserverInterpolationNeedsDeferredSetup
 
+---
+
 ## C_TintController
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
+---
+
 ## CPlayer_AutoaimServices
 
+
+---
 
 ## C_Hostage
 Derived from: [C_BaseCombatCharacter](#c_basecombatcharacter), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -4623,6 +5429,8 @@ Type | Name
 `AttachmentHandle_t` | m_chestAttachment
 `CBasePlayerController*` | m_pPredictionOwner
 `GameTime_t` | m_fNewestAlphaThinkTime
+
+---
 
 ## C_Sprite
 Derived from: [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -4654,8 +5462,12 @@ Type | Name
 `int32` | m_nSpriteWidth
 `int32` | m_nSpriteHeight
 
+---
+
 ## C_WeaponM4A1Silencer
 Derived from: [C_CSWeaponBaseGun](#c_csweaponbasegun), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## CMapInfo
 Derived from: [C_PointEntity](#c_pointentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -4671,6 +5483,8 @@ Type | Name
 `int32` | m_iHostageCount
 `bool` | m_bFadePlayerVisibilityFarZ
 `bool` | m_bRainTraceToSkyEnabled
+
+---
 
 ## C_PlantedC4
 Derived from: [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -4708,6 +5522,8 @@ Type | Name
 `QAngle` | m_vecC4ExplodeSpectateAng
 `float32` | m_flC4ExplodeSpectateDuration
 
+---
+
 ## C_RagdollProp
 Derived from: [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -4722,8 +5538,12 @@ Type | Name
 `CUtlVector< int32 >` | m_parentPhysicsBoneIndices
 `CUtlVector< int32 >` | m_worldSpaceBoneComputationOrder
 
+---
+
 ## C_CSGO_TerroristTeamIntroCamera
 Derived from: [C_CSGO_TeamPreviewCamera](#c_csgo_teampreviewcamera), [C_CSGO_MapPreviewCameraPath](#c_csgo_mappreviewcamerapath), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
 
 ## C_VoteController
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -4738,6 +5558,8 @@ Type | Name
 `bool` | m_bTypeDirty
 `bool` | m_bIsYesNoVote
 
+---
+
 ## ViewAngleServerChange_t
 
 Type | Name
@@ -4745,6 +5567,8 @@ Type | Name
 `FixAngleSet_t` | nType
 `QAngle` | qAngle
 `uint32` | nIndex
+
+---
 
 ## C_Chicken
 Derived from: [C_DynamicProp](#c_dynamicprop), [C_BreakableProp](#c_breakableprop), [CBaseProp](#cbaseprop), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
@@ -4759,9 +5583,12 @@ Type | Name
 `ParticleIndex_t` | m_hWaterWakeParticles
 `bool` | m_bIsPreviewModel
 
+---
+
 ## PhysicsRagdollPose_t
 
 Type | Name
 ------------ | -------------
 `C_NetworkUtlVectorBase< CTransform >` | m_Transforms
 `CHandle< C_BaseEntity >` | m_hOwner
+
