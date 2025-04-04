@@ -8,7 +8,7 @@
     ["handle", "number", "Handle of the entity"],
 ], "base_entity_t") }}
 ---
-{{ define_function("entitylist", "get_game_rules", [], "[`C_CSGameRules`](../netvars/#c_csgamerules)") }}
+{{ define_function("entitylist", "get_game_rules", [], "[`C_CSGameRules`](netvars.md#c_csgamerules)") }}
 ---
 ### **get_entities**
 === "Return style"
