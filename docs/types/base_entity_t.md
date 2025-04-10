@@ -1,5 +1,3 @@
-## Entity functions
-
 {{ define_function("entity", "get_abs_origin", [], "vec3_t", True) }}
 ---
 {{ define_function("entity", "get_abs_rotation", [], "angle_t", True) }}
@@ -8,6 +6,7 @@
 ---
 {{ define_function("entity", "get_entity_handle", [], "number", True) }}
 ---
+
 ## Getting FFI pointer
 To get entity pointer you can use `entity[0]`  
 Also you can use `entity[OFFSET]` to get the address pointing to specified offset of the entity

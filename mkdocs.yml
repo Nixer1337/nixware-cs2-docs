@@ -18,6 +18,7 @@ nav:
     - 'base_entity_t': 'types/base_entity_t.md'
     - 'convar_t': 'types/convar_t.md'
     - 'game_event_t': 'types/game_event_t.md'
+    - 'net_channel_t': 'types/net_channel.md'
     - 'view_setup_t': 'types/view_setup_t.md'
   - 'environment.md'
 theme:

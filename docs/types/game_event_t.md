@@ -1,5 +1,3 @@
-## Getters
-
 {{ define_function("event", "get_name", [], "string", True) }}
 ---
 {{ define_function("event", "get_int", [
@@ -22,9 +20,6 @@
     ["key_name", "string", "Key name"],
 ], "base_entity_t", True) }}
 ---
-
-## Setters
-
 {{ define_function("event", "set_int", [
     ["key_name", "string", "Key name"],
     ["value", "number", "Value"],

@@ -1,5 +1,3 @@
-## Getters
-
 {{ define_function("convar", "get_name", [], "string", True) }}
 ---
 {{ define_function("convar", "get_desc", [], "string", True) }}
