@@ -4,8 +4,6 @@
     ["z", "number"],
 ]) }}
 
-## Functions
-
 {{ define_function("vec3", "lerp", [
     ["other", "vec3_t", "Other vector"],
     ["fraction", "number", "Fraction"],

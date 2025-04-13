@@ -5,8 +5,6 @@
     ["a", "number"],
 ]) }}
 
-## Functions
-
 {{ define_function("color", "lerp", [
     ["other", "color_t", "Other color"],
     ["fraction", "number", "Fraction"],
