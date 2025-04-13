@@ -5,6 +5,8 @@
     ["a", "number"],
 ]) }}
 
+{{ define_function("color", "__tostring", [], "string", True) }}
+---
 {{ define_function("color", "lerp", [
     ["other", "color_t", "Other color"],
     ["fraction", "number", "Fraction"],

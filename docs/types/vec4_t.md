@@ -4,3 +4,5 @@
     ["z", "number"],
     ["w", "number"],
 ]) }}
+
+{{ define_function("vec4", "__tostring", [], "string", True) }}

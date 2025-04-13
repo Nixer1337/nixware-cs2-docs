@@ -1,3 +1,5 @@
+{{ define_function("entity", "__tostring", [], "string", True) }}
+---
 {{ define_function("entity", "get_abs_origin", [], "vec3_t", True) }}
 ---
 {{ define_function("entity", "get_abs_rotation", [], "angle_t", True) }}
