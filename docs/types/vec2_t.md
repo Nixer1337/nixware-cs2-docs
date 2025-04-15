@@ -3,4 +3,4 @@
     ["y", "number"],
 ]) }}
 
-{{ define_function("vec3", "__tostring", [], "string", True) }}
+{{ define_function("vec2", "__tostring", [], "string", True) }}
