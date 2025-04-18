@@ -18,6 +18,14 @@
     If pattern is not found, return value will be `nil`
 
 ---
+{{ define_function("", "find_export", [
+    ["module", 'string', "Module name to search the export in"],
+    ["export_name", "string", "Export name"],
+], "userdata") }}
+!!! warning
+    If export is not found, return value will be `nil`
+
+---
 {{ define_function("", "get_user_name", [], "string") }}
 ---
 {{ define_function("", "get_script_name", [], "string") }}
