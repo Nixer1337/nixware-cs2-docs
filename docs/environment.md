@@ -28,9 +28,9 @@
 ---
 {{ define_function("", "get_user_name", [], "string") }}
 ---
-{{ define_function("", "get_script_name", [], "string") }}
----
 {{ define_function("", "get_game_directory", [], "string") }}
+---
+{{ define_function("", "get_script_name", [], "string") }}
 ---
 {{ define_function("", "unload_script", []) }}
 ---
