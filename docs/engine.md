@@ -41,6 +41,19 @@
     ["end", "vec3_t"],
     ["filter", "trace_filter_t"]
 ], "trace_t") }}
+??? example
+    ``` lua linenums="1"
+    local g_camera_angles = angle_t(0, 0, 0)
+    local g_camera_origin = vec3_t(0, 0, 0)
+    register_callback('override_view', function(view) g_camera_angles = view.angles g_camera_origin = view.origin end)
+    register_callback('paint', function()
+        local forward, _, _ = math.angle_vectors(g_camera_angles)
+        local filter = trace_filter_t(0x2800100001, 3, true)
+        local trace = engine.trace_shape(ray_t(), g_camera_origin, g_camera_origin + (forward * 10000), filter)
+        render.circle_3d(trace.end_pos, 5, color_t(1, 1, 1, 1), 1, trace.hit_normal)
+    end)
+    ```
+
 ---
 
 {{ define_function("engine", "trace_bullet", [
