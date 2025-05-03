@@ -5,6 +5,17 @@
     ["a", "number"],
 ]) }}
 
+### **Constructor**
+
+{{ define_constructor("color_t", [
+    ["r", "number"],
+    ["g", "number"],
+    ["b", "number"],
+    ["a", "number"],
+]) }}
+
+---
+
 {{ define_function("color", "__tostring", [], "string", True) }}
 ---
 {{ define_function("color", "lerp", [

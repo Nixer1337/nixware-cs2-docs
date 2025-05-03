@@ -4,6 +4,16 @@
     ["z", "number"],
 ]) }}
 
+### **Constructor**
+
+{{ define_constructor("vec3_t", [
+    ["x", "number"],
+    ["y", "number"],
+    ["z", "number"],
+]) }}
+
+---
+
 {{ define_function("vec3", "__tostring", [], "string", True) }}
 ---
 {{ define_function("vec3", "lerp", [

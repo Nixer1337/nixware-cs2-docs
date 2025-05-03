@@ -5,4 +5,15 @@
     ["w", "number"],
 ]) }}
 
+### **Constructor**
+
+{{ define_constructor("vec4_t", [
+    ["x", "number"],
+    ["y", "number"],
+    ["z", "number"],
+    ["w", "number"],
+]) }}
+
+---
+
 {{ define_function("vec4", "__tostring", [], "string", True) }}
