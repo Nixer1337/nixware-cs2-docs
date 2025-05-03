@@ -75,6 +75,21 @@ def define_env(env):
         return generate_markdown(table_from_string_list(rows=markdown_arguments_list))
     
     @env.macro
+    def get_constructor_definition(func_name: str, temp_args: list[list]):
+        argument_list: list[str] = []
+        for temp_arg in temp_args:
+            arg = argument(temp_arg)
+            if arg.is_optional:
+                arg.name = f"{arg.name}?"
+            if arg.type[0] == '"' or arg.type[0] == "'":
+                argument_list.append(f"{arg.type}")
+            else:  
+                argument_list.append(f"{arg.name}: {arg.type}")
+        return f"""
+<font size=5>`:::typescript {func_name}({", ".join(argument_list)})`</font>        
+"""
+
+    @env.macro
     def get_function_definition(table_name: str, func_name: str, temp_args: list[list], return_type: str = "", is_not_static: bool = False):
         argument_list: list[str] = []
         for temp_arg in temp_args:
@@ -108,12 +123,31 @@ def define_env(env):
 """, " " * indentation * 4)
 
     @env.macro
+    def get_constructor_table_and_definition(func_name: str, temp_args: list[list], indentation: int = 1):
+        return indent(f"""
+
+{ get_constructor_definition(func_name, temp_args) }
+{ get_arguments_table(temp_args) }
+
+""", " " * indentation * 4)
+
+    @env.macro
     def define_function(table_name: str, func_name: str, temp_args: list[list], return_type: str = "", is_not_static: bool = False):
         return f"""
 
 ### **{func_name}**
 
 { get_function_table_and_definition(table_name, func_name, temp_args, return_type, is_not_static, 0) }
+
+"""
+
+    @env.macro
+    def define_constructor(func_name: str, temp_args: list[list]):
+        return f"""
+
+
+
+{ get_constructor_table_and_definition(func_name, temp_args, 0) }
 
 """
     
