@@ -20,6 +20,12 @@ nav:
     - 'game_event_t': 'types/game_event_t.md'
     - 'net_channel_t': 'types/net_channel.md'
     - 'view_setup_t': 'types/view_setup_t.md'
+    - 'ray_t': 'types/ray_t.md'
+    - 'hitbox_t': 'types/hitbox_t.md'
+    - 'trace_filter_t': 'types/trace_filter_t.md'
+    - 'trace_t': 'types/trace_t.md'
+    - 'rn_collision_attr_t': 'types/rn_collision_attr_t.md'
+
   - 'environment.md'
 theme:
   name: material

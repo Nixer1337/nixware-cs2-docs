@@ -1,0 +1,17 @@
+{{ get_arguments_table([
+    ["hit_entity", "base_entity_t"],
+    ["hitbox", "hitbox_t"],
+    ["contents", "number", "Contents on other side of surface hit"],
+    ["shape_attributes", "rn_collision_attr_t"],
+    ["start_pos", "vec3_t", "Start position"],
+    ["end_pos", "vec3_t", "Final position"],
+    ["hit_normal", "vec3_t", "Surface normal at impact"],
+    ["hit_point", "vec3_t", "Exact hit point if exact_hit_point is true, otherwise equal to end_pos"],
+    ["hit_offset", "number", "Surface normal hit offset"],
+    ["fraction", "number", "Time completed, 1.0 = didn't hit anything"],
+    ["triangle", "number", "The index of the triangle that was hit"],
+    ["hitbox_bone_index", "number", "The index of the hitbox bone that was hit"],
+    ["ray_type", "number", ""],
+    ["start_in_solid", "boolean", "If true, the initial point was in a solid area"],
+    ["exact_hit_point", "boolean", "If true, then hit_point is the exact hit point of the query and the shape"],
+]) }}

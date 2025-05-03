@@ -1,0 +1,14 @@
+{{ get_arguments_table([
+    ["name", "string"],
+    ["surface_property", "string"],
+    ["bone_name", "string"],
+    ["mins", "vec3_t"],
+    ["maxs", "vec3_t"],
+    ["shape_radius", "number"],
+    ["bone_name_hash", "number"],
+    ["group_id", "number"],
+    ["shape_type", "number"],
+    ["translation_only", "boolean"],
+    ["crc", "number"],
+    ["hitbox_index", "number"],
+]) }}

@@ -35,6 +35,14 @@
     ["prop_name", "string", "Name of the property"]
 ], "number") }}
 ---
+{{ define_function("engine", "trace_shape", [
+    ["ray", "ray_t"],
+    ["start", "vec3_t"],
+    ["end", "vec3_t"],
+    ["filter", "trace_filter_t"]
+], "trace_t") }}
+---
+
 {{ define_function("engine", "trace_bullet", [
     ["from_entity", "base_entity_t", "Player whose weapon will be used for this trace"],
     ["from", "vec3_t", "Position to start tracing from"],
