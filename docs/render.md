@@ -1,5 +1,4 @@
 # render
-## Functions
 
 {{ define_function("render", "screen_size", [
 ], "vec2_t") }}
@@ -71,7 +70,6 @@
     end)
     ```
 ---
-## Draw functions
 {{ define_function("render", "texture", [
     ["texture",     "texture_t",    "Texture object"],
     ["from",        "vec2_t",       "Start position of the texture"],
@@ -176,7 +174,6 @@
 ---
 {{ define_function("render", "pop_clip_rect", []) }}
 ---
-## World draw functions
 {{ define_function("render", "circle_3d", [
     ["pos",       "vec3_t",  "Position of the circle"],
     ["radius",    "number",  "Radius of the circle"],
