@@ -21,9 +21,3 @@
     ["center_b", "vec3_t"],
     ["radius", "number"],
 ]) }}
-
-{{ define_constructor("ray_t", [
-    ["center_a", "vec3_t"],
-    ["center_b", "vec3_t"],
-    ["radius", "number"],
-]) }}
