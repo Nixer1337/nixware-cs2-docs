@@ -35,6 +35,25 @@
 ], "vec3_t") }}
 !!! info 
     Returns `nil` if unsuccessful
+    
+??? example
+    ``` lua linenums="1"
+    local g_camera_origin = vec3_t(0, 0, 0)
+    register_callback('override_view', function(view) g_camera_origin = view.origin end)
+    register_callback('paint', function()
+        entitylist.get_entities("C_CSPlayerPawn", function(player)
+            local head_pos = engine.get_hitbox_pos(player, 0)
+            if head_pos == nil then return end
+            
+            local pos2d = render.world_to_screen(head_pos)
+            if pos2d == nil then return end
+
+            local trace = engine.trace_shape(ray_t(), g_camera_origin, head_pos, trace_filter_t(0x2800100001, 3, true))
+            local visible = trace.fraction < 1 or trace.start_in_solid
+            render.circle_filled(pos2d, 5, 0, visible and color_t(1, 0, 0, 0.5) or color_t(0, 1, 0, 0.5))
+        end)
+    end)
+    ```
 
 ---
 {{ define_function("engine", "get_netvar_offset", [
