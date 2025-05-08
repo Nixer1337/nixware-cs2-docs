@@ -29,6 +29,14 @@
 ---
 {{ define_function("engine", "get_net_channel", [], "net_channel_t") }}
 ---
+{{ define_function("engine", "get_hitbox_pos", [
+    ["pawn", "base_entity_t", "Player pawn"],
+    ["hitbox_index", "number", "Hitbox index"],
+], "vec3_t") }}
+!!! info 
+    Returns `nil` if unsuccessful
+
+---
 {{ define_function("engine", "get_netvar_offset", [
     ["module_name", "string", "Module name"],
     ["table_name", "string", "Name of the table"],
@@ -57,7 +65,7 @@
 ---
 
 {{ define_function("engine", "trace_bullet", [
-    ["from_entity", "base_entity_t", "Player whose weapon will be used for this trace"],
+    ["from_pawn", "base_entity_t", "Player whose weapon will be used for this trace"],
     ["from", "vec3_t", "Position to start tracing from"],
     ["to", "vec3_t", "Position where the trace ends"]
 ], "number") }}
