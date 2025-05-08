@@ -28,4 +28,12 @@ First argument is the command that was entered.
 	You can interrupt the in-game command execution by returning `false` from the function. So basically if you return `false`, the command will not be executed by the game. 
 
 ---
+{{ define_function("", "player_chat", [
+    ["msg", "chat_message_t", "Chat message"],
+]) }}
+!!! important "Return value of the function"
+	You prevent chat print by returning `false` from the function. So basically if you return `false`, chat message will not print by the game. 
+
+---
+
 {{ define_function("", "unload", []) }}

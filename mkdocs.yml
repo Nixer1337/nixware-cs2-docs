@@ -20,6 +20,7 @@ nav:
     - 'game_event_t': 'types/game_event_t.md'
     - 'net_channel_t': 'types/net_channel.md'
     - 'view_setup_t': 'types/view_setup_t.md'
+    - 'chat_message_t': 'types/chat_message_t.md'
     - 'ray_t': 'types/ray_t.md'
     - 'hitbox_t': 'types/hitbox_t.md'
     - 'trace_filter_t': 'types/trace_filter_t.md'
