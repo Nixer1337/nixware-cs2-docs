@@ -2,11 +2,17 @@
 ---
 {{ define_function("msg", "get_entity", [], "base_entity_t", True) }}
 ---
+{{ define_function("msg", "get_message_name", [], "string", True) }}
+---
 {{ define_function("msg", "get_name", [], "string", True) }}
 ---
 {{ define_function("msg", "get_message", [], "string", True) }}
 ---
 {{ define_function("msg", "get_position", [], "string", True) }}
+---
+{{ define_function("msg", "set_message_name", [
+    ["message_name", "string", "New message name"],
+], "", True) }}
 ---
 {{ define_function("msg", "set_name", [
     ["name", "string", "New name"],
