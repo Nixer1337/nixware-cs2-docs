@@ -29,6 +29,11 @@
 ---
 {{ define_function("engine", "get_net_channel", [], "net_channel_t") }}
 ---
+{{ define_function("engine", "get_hitbox", [
+    ["pawn", "base_entity_t", "Player pawn"],
+    ["hitbox_index", "number", "Hitbox index"],
+], "hitbox_t") }}
+---
 {{ define_function("engine", "get_hitbox_pos", [
     ["pawn", "base_entity_t", "Player pawn"],
     ["hitbox_index", "number", "Hitbox index"],
