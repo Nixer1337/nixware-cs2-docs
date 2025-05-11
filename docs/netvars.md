@@ -173,7 +173,6 @@ m_iMatchStats_PlayersAlive_CT | `int32[30]`
 m_iMatchStats_PlayersAlive_T | `int32[30]`
 m_TeamRespawnWaveTimes | `float32[32]`
 m_flNextRespawnWave | `GameTime_t[32]`
-m_nServerQuestID | `int32`
 m_vMinimapMins | `Vector`
 m_vMinimapMaxs | `Vector`
 m_MinimapVerticalSectionHeights | `float32[8]`
@@ -4108,6 +4107,11 @@ m_vBoxMaxs | `Vector`
 
 ---
 
+## CCS_PortraitWorldCallbackHandler
+Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
+
 ## C_SoundOpvarSetPathCornerEntity
 Derived from: [C_SoundOpvarSetPointEntity](#c_soundopvarsetpointentity), [C_SoundOpvarSetPointBase](#c_soundopvarsetpointbase), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -5035,6 +5039,7 @@ m_pActionTrackingServices | `CCSPlayerController_ActionTrackingServices*`
 m_pDamageServices | `CCSPlayerController_DamageServices*`
 m_iPing | `uint32`
 m_bHasCommunicationAbuseMute | `bool`
+m_uiCommunicationMuteFlags | `uint32`
 m_szCrosshairCodes | `CUtlSymbolLarge`
 m_iPendingTeamNum | `uint8`
 m_flForceTeamTime | `GameTime_t`
@@ -5054,6 +5059,7 @@ m_iCompetitiveRankingPredicted_Loss | `int32`
 m_iCompetitiveRankingPredicted_Tie | `int32`
 m_nEndMatchNextMapVote | `int32`
 m_unActiveQuestId | `uint16`
+m_rtActiveMissionPeriod | `uint32`
 m_nQuestProgressReason | `QuestProgress::Reason`
 m_unPlayerTvControlFlags | `uint32`
 m_iDraftIndex | `int32`
