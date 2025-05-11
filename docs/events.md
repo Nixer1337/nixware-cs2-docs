@@ -36,4 +36,20 @@ First argument is the command that was entered.
 
 ---
 
+{{ define_function("", "string_cmd", [
+    ["cmd", "string", "Command"],
+]) }}
+!!! example
+	```lua linenums="1"
+	register_callback('string_cmd', function(cmd)
+		if cmd:find('say_team') then
+			return nil --block team communication
+		elseif cmd:find('say') then
+			return 'say YOUR_MESSAGE'
+		end
+	end)
+	```
+
+---
+
 {{ define_function("", "unload", []) }}
