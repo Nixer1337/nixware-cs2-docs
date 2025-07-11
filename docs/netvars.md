@@ -176,7 +176,6 @@ m_flNextRespawnWave | `GameTime_t[32]`
 m_vMinimapMins | `Vector`
 m_vMinimapMaxs | `Vector`
 m_MinimapVerticalSectionHeights | `float32[8]`
-m_bSpawnedTerrorHuntHeavy | `bool`
 m_ullLocalMatchID | `uint64`
 m_nEndMatchMapGroupVoteTypes | `int32[10]`
 m_nEndMatchMapGroupVoteOptions | `int32[10]`
@@ -2465,7 +2464,6 @@ Name | Type
 ------------ | -------------
 m_bHasDefuser | `bool`
 m_bHasHelmet | `bool`
-m_bHasHeavyArmor | `bool`
 
 ---
 
@@ -3083,8 +3081,8 @@ m_iEntityQuantity | `int32`
 m_iRarityOverride | `int32`
 m_iQualityOverride | `int32`
 m_iOriginOverride | `int32`
+m_ubStyleOverride | `uint8`
 m_unClientFlags | `uint8`
-m_unOverrideStyle | `uint8`
 m_AttributeList | `CAttributeList`
 m_NetworkedDynamicAttributes | `CAttributeList`
 m_szCustomName | `char[161]`
