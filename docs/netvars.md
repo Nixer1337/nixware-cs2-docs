@@ -193,6 +193,7 @@ Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
 Name | Type
 ------------ | -------------
+m_vecNetworkableLoadout | `CUtlVector< CCSPlayerController_InventoryServices::NetworkedLoadoutSlot_t >`
 m_unMusicID | `uint16`
 m_rank | `MedalRank_t[6]`
 m_nPersonaDataPublicLevel | `int32`
@@ -222,7 +223,7 @@ Derived from: [C_BaseTrigger](#c_basetrigger), [C_BaseToggle](#c_basetoggle), [C
 
 Name | Type
 ------------ | -------------
-m_vFanOrigin | `Vector`
+m_vFanOrigin | `VectorWS`
 m_vFanOriginOffset | `Vector`
 m_vFanEnd | `Vector`
 m_vNoiseDirectionTarget | `Vector`
@@ -524,26 +525,13 @@ Derived from: [C_BasePlayerPawn](#c_baseplayerpawn), [C_BaseCombatCharacter](#c_
 Name | Type
 ------------ | -------------
 m_pPingServices | `CCSPlayer_PingServices*`
-m_fRenderingClipPlane | `float32[4]`
-m_nLastClipPlaneSetupFrame | `int32`
-m_vecLastClipCameraPos | `Vector`
-m_vecLastClipCameraForward | `Vector`
-m_bClipHitStaticWorld | `bool`
-m_bCachedPlaneIsValid | `bool`
-m_pClippingWeapon | `C_CSWeaponBase*`
 m_previousPlayerState | `CSPlayerState`
 m_iPlayerState | `CSPlayerState`
-m_bIsRescuing | `bool`
 m_bHasMovedSinceSpawn | `bool`
-m_fMolotovUseTime | `float32`
-m_iThrowGrenadeCounter | `int32`
 m_flLastSpawnTimeIndex | `GameTime_t`
 m_iProgressBarDuration | `int32`
 m_flProgressBarStartTime | `float32`
-m_vecIntroStartEyePosition | `Vector`
-m_vecIntroStartPlayerForward | `Vector`
 m_flClientDeathTime | `GameTime_t`
-m_bScreenTearFrameCaptured | `bool`
 m_flFlashBangTime | `float32`
 m_flFlashScreenshotAlpha | `float32`
 m_flFlashOverlayAlpha | `float32`
@@ -554,30 +542,13 @@ m_flFlashMaxAlpha | `float32`
 m_flFlashDuration | `float32`
 m_flClientHealthFadeChangeTimestamp | `GameTime_t`
 m_nClientHealthFadeParityValue | `int32`
-m_flDeathCCWeight | `float32`
-m_flPrevRoundEndTime | `float32`
-m_flPrevMatchEndTime | `float32`
-m_angEyeAngles | `QAngle`
 m_fNextThinkPushAway | `float32`
-m_iIDEntIndex | `CEntityIndex`
-m_delayTargetIDTimer | `CountdownTimer`
-m_iTargetItemEntIdx | `CEntityIndex`
-m_iOldIDEntIndex | `CEntityIndex`
-m_holdTargetIDTimer | `CountdownTimer`
 m_flCurrentMusicStartTime | `float32`
 m_flMusicRoundStartTime | `float32`
 m_bDeferStartMusicOnWarmup | `bool`
-m_cycleLatch | `int32`
-m_serverIntendedCycle | `float32`
 m_flLastSmokeOverlayAlpha | `float32`
 m_flLastSmokeAge | `float32`
 m_vLastSmokeOverlayColor | `Vector`
-m_nPlayerInfernoBodyFx | `ParticleIndex_t`
-m_nPlayerInfernoFootFx | `ParticleIndex_t`
-m_flNextMagDropTime | `float32`
-m_nLastMagDropAttachmentIndex | `int32`
-m_vecLastAliveLocalVelocity | `Vector`
-m_bGuardianShouldSprayCustomXMark | `bool`
 m_hOriginalController | `CHandle< CCSPlayerController >`
 
 ---
@@ -597,11 +568,6 @@ m_entitySpottedState | `EntitySpottedState_t`
 m_nSpotRules | `int32`
 m_bPlayedArmingBeeps | `bool[7]`
 m_bBombPlanted | `bool`
-
----
-
-## CCSClientPointScriptEntity
-Derived from: [CCSPointScriptEntity](#ccspointscriptentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
 ---
 
@@ -673,6 +639,16 @@ m_iBombSite | `int32`
 
 ---
 
+## CPulseCell_WaitForObservable
+Derived from: [CPulseCell_BaseYieldingInflow](#cpulsecell_baseyieldinginflow), [CPulseCell_BaseFlow](#cpulsecell_baseflow), [CPulseCell_Base](#cpulsecell_base)
+
+Name | Type
+------------ | -------------
+m_Condition | `PulseObservableBoolExpression_t`
+m_OnTrue | `CPulse_ResumePoint`
+
+---
+
 ## C_SoundAreaEntitySphere
 Derived from: [C_SoundAreaEntityBase](#c_soundareaentitybase), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -712,14 +688,7 @@ Derived from: [CPlayer_ObserverServices](#cplayer_observerservices)
 
 Name | Type
 ------------ | -------------
-m_hLastObserverTarget | `CEntityHandle`
-m_vecObserverInterpolateOffset | `Vector`
-m_vecObserverInterpStartPos | `Vector`
-m_flObsInterp_PathLength | `float32`
-m_qObsInterp_OrientationStart | `Quaternion`
-m_qObsInterp_OrientationTravelDir | `Quaternion`
 m_obsInterpState | `ObserverInterpState_t`
-m_bObserverInterpolationNeedsDeferredSetup | `bool`
 
 ---
 
@@ -728,7 +697,7 @@ Derived from: [CEntityComponent](#centitycomponent)
 
 Name | Type
 ------------ | -------------
-m_bvDisabledHitGroups | `uint32[1]`
+m_flBoundsExpandRadius | `float32`
 
 ---
 
@@ -1045,44 +1014,6 @@ m_nVariant | `int32`
 
 ---
 
-## C_TeamRoundTimer
-Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
-
-Name | Type
------------- | -------------
-m_bTimerPaused | `bool`
-m_flTimeRemaining | `float32`
-m_flTimerEndTime | `GameTime_t`
-m_bIsDisabled | `bool`
-m_bShowInHUD | `bool`
-m_nTimerLength | `int32`
-m_nTimerInitialLength | `int32`
-m_nTimerMaxLength | `int32`
-m_bAutoCountdown | `bool`
-m_nSetupTimeLength | `int32`
-m_nState | `int32`
-m_bStartPaused | `bool`
-m_bInCaptureWatchState | `bool`
-m_flTotalTime | `float32`
-m_bStopWatchTimer | `bool`
-m_bFireFinished | `bool`
-m_bFire5MinRemain | `bool`
-m_bFire4MinRemain | `bool`
-m_bFire3MinRemain | `bool`
-m_bFire2MinRemain | `bool`
-m_bFire1MinRemain | `bool`
-m_bFire30SecRemain | `bool`
-m_bFire10SecRemain | `bool`
-m_bFire5SecRemain | `bool`
-m_bFire4SecRemain | `bool`
-m_bFire3SecRemain | `bool`
-m_bFire2SecRemain | `bool`
-m_bFire1SecRemain | `bool`
-m_nOldTimerLength | `int32`
-m_nOldTimerState | `int32`
-
----
-
 ## C_ColorCorrectionVolume
 Derived from: [C_BaseTrigger](#c_basetrigger), [C_BaseToggle](#c_basetoggle), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -1119,7 +1050,6 @@ m_flForwardMove | `float32`
 m_flLeftMove | `float32`
 m_flUpMove | `float32`
 m_vecLastMovementImpulses | `Vector`
-m_vecLastFinishTickViewAngles | `QAngle`
 m_vecOldViewAngles | `QAngle`
 
 ---
@@ -1157,6 +1087,7 @@ m_hGraphDefinitionAG2 | `CStrongHandle< InfoForResourceTypeCNmGraphDefinition >`
 m_bIsUsingAG2 | `bool`
 m_serializedPoseRecipeAG2 | `C_NetworkUtlVectorBase< uint8 >`
 m_nSerializePoseRecipeSizeAG2 | `int32`
+m_nSerializePoseRecipeVersionAG2 | `int32`
 m_nGraphCreationFlagsAG2 | `uint8`
 m_nServerGraphDefReloadCountAG2 | `int32`
 
@@ -1217,43 +1148,6 @@ Name | Type
 ------------ | -------------
 m_flDeathCamTilt | `float32`
 m_vClientScopeInaccuracy | `Vector`
-
----
-
-## CProjectedTextureBase
-
-Name | Type
------------- | -------------
-m_hTargetEntity | `CHandle< C_BaseEntity >`
-m_bState | `bool`
-m_bAlwaysUpdate | `bool`
-m_flLightFOV | `float32`
-m_bEnableShadows | `bool`
-m_bSimpleProjection | `bool`
-m_bLightOnlyTarget | `bool`
-m_bLightWorld | `bool`
-m_bCameraSpace | `bool`
-m_flBrightnessScale | `float32`
-m_LightColor | `Color`
-m_flIntensity | `float32`
-m_flLinearAttenuation | `float32`
-m_flQuadraticAttenuation | `float32`
-m_bVolumetric | `bool`
-m_flVolumetricIntensity | `float32`
-m_flNoiseStrength | `float32`
-m_flFlashlightTime | `float32`
-m_nNumPlanes | `uint32`
-m_flPlaneOffset | `float32`
-m_flColorTransitionTime | `float32`
-m_flAmbient | `float32`
-m_SpotlightTextureName | `char[512]`
-m_nSpotlightTextureFrame | `int32`
-m_nShadowQuality | `uint32`
-m_flNearZ | `float32`
-m_flFarZ | `float32`
-m_flProjectionSize | `float32`
-m_flRotation | `float32`
-m_bFlipHorizontal | `bool`
 
 ---
 
@@ -1539,9 +1433,6 @@ Derived from: [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econe
 
 Name | Type
 ------------ | -------------
-m_thirdPersonFireSequences | `CUtlVector< HSequence >`
-m_hCurrentThirdPersonSequence | `HSequence`
-m_thirdPersonSequences | `HSequence[7]`
 m_iWeaponGameplayAnimState | `WeaponGameplayAnimState`
 m_flWeaponGameplayAnimStateTimestamp | `GameTime_t`
 m_flInspectCancelCompleteTime | `GameTime_t`
@@ -1592,6 +1483,7 @@ m_IronSightController | `C_IronSightController`
 m_iIronSightMode | `int32`
 m_flLastLOSTraceFailureTime | `GameTime_t`
 m_flWatTickOffset | `float32`
+m_flLastShakeTime | `GameTime_t`
 
 ---
 
@@ -1850,8 +1742,8 @@ Name | Type
 m_vecLadderDir | `Vector`
 m_Dismounts | `CUtlVector< CHandle< C_InfoLadderDismount > >`
 m_vecLocalTop | `Vector`
-m_vecPlayerMountPositionTop | `Vector`
-m_vecPlayerMountPositionBottom | `Vector`
+m_vecPlayerMountPositionTop | `VectorWS`
+m_vecPlayerMountPositionBottom | `VectorWS`
 m_flAutoRideSpeed | `float32`
 m_bDisabled | `bool`
 m_bFakeLadder | `bool`
@@ -1940,7 +1832,7 @@ m_bInBuyZone | `bool`
 m_bPreviouslyInBuyZone | `bool`
 m_aimPunchAngle | `QAngle`
 m_aimPunchAngleVel | `QAngle`
-m_aimPunchTickBase | `int32`
+m_aimPunchTickBase | `GameTick_t`
 m_aimPunchTickFraction | `float32`
 m_aimPunchCache | `CUtlVector< QAngle >`
 m_bInLanding | `bool`
@@ -2028,6 +1920,24 @@ m_fImmuneToGunGameDamageTime | `GameTime_t`
 m_bGunGameImmunity | `bool`
 m_fImmuneToGunGameDamageTimeLast | `GameTime_t`
 m_fMolotovDamageTime | `float32`
+m_vecLastAliveLocalVelocity | `Vector`
+m_fRenderingClipPlane | `float32[4]`
+m_nLastClipPlaneSetupFrame | `int32`
+m_vecLastClipCameraPos | `Vector`
+m_vecLastClipCameraForward | `Vector`
+m_bClipHitStaticWorld | `bool`
+m_bCachedPlaneIsValid | `bool`
+m_pClippingWeapon | `C_CSWeaponBase*`
+m_nPlayerInfernoBodyFx | `ParticleIndex_t`
+m_angEyeAngles | `QAngle`
+m_arrOldEyeAnglesTimes | `GameTime_t[4]`
+m_arrOldEyeAngles | `QAngle[4]`
+m_angEyeAnglesVelocity | `QAngle`
+m_iIDEntIndex | `CEntityIndex`
+m_delayTargetIDTimer | `CountdownTimer`
+m_iTargetItemEntIdx | `CEntityIndex`
+m_iOldIDEntIndex | `CEntityIndex`
+m_holdTargetIDTimer | `CountdownTimer`
 
 ---
 
@@ -2077,10 +1987,6 @@ m_fNewestAlphaThinkTime | `GameTime_t`
 
 ---
 
-## CCSPointScriptExtensions_entity
-
----
-
 ## C_fogplayerparams_t
 
 Name | Type
@@ -2106,7 +2012,7 @@ m_flNewFarZ | `float32`
 
 Name | Type
 ------------ | -------------
-m_nodeToWorld | `CTransform`
+m_nodeToWorld | `CTransformWS`
 m_pOwner | `CEntityInstance*`
 m_pParent | `CGameSceneNode*`
 m_pChild | `CGameSceneNode*`
@@ -2115,9 +2021,12 @@ m_hParent | `CGameSceneNodeHandle`
 m_vecOrigin | `CNetworkOriginCellCoordQuantizedVector`
 m_angRotation | `QAngle`
 m_flScale | `float32`
-m_vecAbsOrigin | `Vector`
+m_vecAbsOrigin | `VectorWS`
 m_angAbsRotation | `QAngle`
 m_flAbsScale | `float32`
+m_vecWrappedLocalOrigin | `Vector`
+m_angWrappedLocalRotation | `QAngle`
+m_flWrappedScale | `float32`
 m_nParentAttachmentOrBone | `int16`
 m_bDebugAbsOriginChanges | `bool`
 m_bDormant | `bool`
@@ -2419,10 +2328,6 @@ m_hLight | `CHandle< C_BaseEntity >`
 
 ---
 
-## CCSPointScriptExtensions_observer
-
----
-
 ## C_FuncMoveLinear
 Derived from: [C_BaseToggle](#c_basetoggle), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -2474,10 +2379,6 @@ m_vMaxs | `Vector`
 ---
 
 ## CPulseTestScriptLib
-
----
-
-## CCSPointScriptExtensions_player_controller
 
 ---
 
@@ -2548,7 +2449,7 @@ Name | Type
 ------------ | -------------
 m_CRenderComponent | `CRenderComponent*`
 m_CHitboxComponent | `CHitboxComponent`
-m_pDestructiblePartsSystemComponent | `CDestructiblePartsSystemComponent*`
+m_pDestructiblePartsSystemComponent | `CDestructiblePartsComponent*`
 m_LastHitGroup | `HitGroup_t`
 m_sLastDamageSourceName | `CGlobalSymbol`
 m_vLastDamagePosition | `Vector`
@@ -2577,11 +2478,14 @@ m_vDecalPosition | `Vector`
 m_vDecalForwardAxis | `Vector`
 m_flDecalHealBloodRate | `float32`
 m_flDecalHealHeightRate | `float32`
+m_nDecalMode | `DecalMode_t`
+m_nRequiredDecalMode | `DecalMode_t`
 m_ConfigEntitiesToPropagateMaterialDecalsTo | `C_NetworkUtlVectorBase< CHandle< C_BaseModelEntity > >`
 m_vecViewOffset | `CNetworkViewOffsetVector`
 m_pClientAlphaProperty | `CClientAlphaProperty*`
 m_ClientOverrideTint | `Color`
 m_bUseClientOverrideTint | `bool`
+m_bvDisabledHitGroups | `uint32[1]`
 
 ---
 
@@ -2822,10 +2726,6 @@ Derived from: [C_SoundOpvarSetPointEntity](#c_soundopvarsetpointentity), [C_Soun
 
 ---
 
-## CCSPointScriptExtensions_weapon_cs_base
-
----
-
 ## C_WeaponBizon
 Derived from: [C_CSWeaponBaseGun](#c_csweaponbasegun), [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_baseplayerweapon), [C_EconEntity](#c_econentity), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -2963,10 +2863,6 @@ Derived from: [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemode
 
 ---
 
-## CCSPointScriptExtensions_player
-
----
-
 ## CPulseCell_Outflow_CycleShuffled::InstanceState_t
 
 Name | Type
@@ -2982,10 +2878,6 @@ Name | Type
 ------------ | -------------
 m_StartTime | `GameTime_t`
 m_EndTime | `GameTime_t`
-
----
-
-## CSharedPulseTypeQueryRegistration
 
 ---
 
@@ -3443,7 +3335,6 @@ m_bInStuckTest | `bool`
 m_nTraceCount | `int32`
 m_StuckLast | `int32`
 m_bSpeedCropped | `bool`
-m_flGroundMoveEfficiency | `float32`
 m_nOldWaterLevel | `int32`
 m_flWaterEntryTime | `float32`
 m_vecForward | `Vector`
@@ -3464,6 +3355,7 @@ m_flStaminaAtJumpStart | `float32`
 m_flAccumulatedJumpError | `float32`
 m_flTicksSinceLastSurfingDetected | `float32`
 m_bWasSurfing | `bool`
+m_vecInputRotated | `Vector`
 
 ---
 
@@ -3489,7 +3381,7 @@ Derived from: [C_CSWeaponBase](#c_csweaponbase), [C_BasePlayerWeapon](#c_basepla
 
 Name | Type
 ------------ | -------------
-m_SequenceCompleteTimer | `CountdownTimer`
+m_bSequenceInProgress | `bool`
 m_bRedraw | `bool`
 
 ---
@@ -3501,16 +3393,6 @@ Derived from: [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseent
 
 ## C_FuncBrush
 Derived from: [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
-
----
-
-## CPulseCell_Outflow_StringSwitch
-Derived from: [CPulseCell_BaseFlow](#cpulsecell_baseflow), [CPulseCell_Base](#cpulsecell_base)
-
-Name | Type
------------- | -------------
-m_DefaultCaseOutflow | `CPulse_OutflowConnection`
-m_CaseOutflows | `CUtlVector< CPulse_OutflowConnection >`
 
 ---
 
@@ -3683,15 +3565,6 @@ m_EnvWindShared | `C_EnvWindShared`
 
 ---
 
-## CCSPointScript
-Derived from: [CBasePulseGraphInstance](#cbasepulsegraphinstance)
-
-Name | Type
------------- | -------------
-m_pParent | `CCSPointScriptEntity*`
-
----
-
 ## sky3dparams_t
 
 Name | Type
@@ -3707,6 +3580,17 @@ m_nWorldGroupID | `WorldGroupId_t`
 
 ## C_FlashbangProjectile
 Derived from: [C_BaseCSGrenadeProjectile](#c_basecsgrenadeprojectile), [C_BaseGrenade](#c_basegrenade), [C_BaseFlex](#c_baseflex), [CBaseAnimGraph](#cbaseanimgraph), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
+
+## CDestructiblePartsComponent
+
+Name | Type
+------------ | -------------
+__m_pChainEntity | `CNetworkVarChainer`
+m_vecDamageTakenByHitGroup | `CUtlVector< uint16 >`
+m_hOwner | `CHandle< C_BaseModelEntity >`
+m_nLastHitDamageLevel | `int32`
 
 ---
 
@@ -3743,7 +3627,7 @@ m_perRoundStats | `C_UtlVectorEmbeddedNetworkVar< CSPerRoundStats_t >`
 m_matchStats | `CSMatchStats_t`
 m_iNumRoundKills | `int32`
 m_iNumRoundKillsHeadshots | `int32`
-m_unTotalRoundDamageDealt | `uint32`
+m_flTotalRoundDamageDealt | `float32`
 
 ---
 
@@ -4205,10 +4089,6 @@ Derived from: [C_CS2HudModelBase](#c_cs2hudmodelbase), [C_LateUpdatedAnimating](
 
 ---
 
-## CPulseRuntimeLibModuleLocalTypeQueryRegistration
-
----
-
 ## C_TextureBasedAnimatable
 Derived from: [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -4359,8 +4239,8 @@ m_flRadius | `float32`
 
 Name | Type
 ------------ | -------------
-m_vOrigin | `Vector`
-m_vStart | `Vector`
+m_vOrigin | `VectorWS`
+m_vStart | `VectorWS`
 m_vNormal | `Vector`
 m_vAngles | `QAngle`
 m_hEntity | `CEntityHandle`
@@ -4373,7 +4253,7 @@ m_nEffectIndex | `CWeakHandle< InfoForResourceTypeIParticleSystemDefinition >`
 m_nDamageType | `uint32`
 m_nPenetrate | `uint8`
 m_nMaterial | `uint16`
-m_nHitBox | `uint16`
+m_nHitBox | `int16`
 m_nColor | `uint8`
 m_fFlags | `uint8`
 m_nAttachmentIndex | `AttachmentHandle_t`
@@ -4458,6 +4338,16 @@ m_PhonemeClasses | `C_BaseFlex::Emphasized_Phoneme[3]`
 
 ## C_FuncMover
 Derived from: [C_BaseToggle](#c_basetoggle), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+---
+
+## CCSPlayerController_InventoryServices::NetworkedLoadoutSlot_t
+
+Name | Type
+------------ | -------------
+pItem | `C_EconItemView*`
+team | `uint16`
+slot | `uint16`
 
 ---
 
@@ -4726,9 +4616,9 @@ m_szPlayerDamagerName | `CUtlString`
 m_szPlayerRecipientName | `CUtlString`
 m_DamagerXuid | `uint64`
 m_RecipientXuid | `uint64`
-m_iBulletsDamage | `int32`
-m_iDamage | `int32`
-m_iActualHealthRemoved | `int32`
+m_flBulletsDamage | `float32`
+m_flDamage | `float32`
+m_flActualHealthRemoved | `float32`
 m_iNumHits | `int32`
 m_iLastBulletUpdate | `int32`
 m_bIsOtherEnemy | `bool`
@@ -4946,17 +4836,6 @@ Derived from: [C_LateUpdatedAnimating](#c_lateupdatedanimating), [CBaseAnimGraph
 
 ---
 
-## CDestructiblePartsSystemComponent
-
-Name | Type
------------- | -------------
-__m_pChainEntity | `CNetworkVarChainer`
-m_DamageLevelTakenByHitGroup | `C_NetworkUtlVectorBase< uint16 >`
-m_hOwner | `CHandle< C_BaseModelEntity >`
-m_nLastHitDamageLevel | `int32`
-
----
-
 ## C_CSGameRules
 Derived from: [C_TeamplayRules](#c_teamplayrules), [C_MultiplayRules](#c_multiplayrules), [C_GameRules](#c_gamerules)
 
@@ -5033,7 +4912,6 @@ m_nEndMatchMapGroupVoteOptions | `int32[10]`
 m_nEndMatchMapVoteWinner | `int32`
 m_iNumConsecutiveCTLoses | `int32`
 m_iNumConsecutiveTerroristLoses | `int32`
-m_bMarkClientStopRecordAtRoundEnd | `bool`
 m_nMatchAbortedEarlyReason | `int32`
 m_bHasTriggeredRoundStartMusic | `bool`
 m_bSwitchingTeamsAtRoundReset | `bool`
@@ -5209,6 +5087,16 @@ Derived from: [C_SoundOpvarSetPointBase](#c_soundopvarsetpointbase), [C_BaseEnti
 
 ---
 
+## CPulseGameBlackboard
+Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
+
+Name | Type
+------------ | -------------
+m_strGraphName | `CUtlString`
+m_strStateBlob | `CUtlString`
+
+---
+
 ## CPulseCell_Value_RandomInt
 Derived from: [CPulseCell_BaseValue](#cpulsecell_basevalue), [CPulseCell_Base](#cpulsecell_base)
 
@@ -5265,16 +5153,6 @@ m_bClosedLoop | `bool`
 
 ---
 
-## CPulseCell_Outflow_IntSwitch
-Derived from: [CPulseCell_BaseFlow](#cpulsecell_baseflow), [CPulseCell_Base](#cpulsecell_base)
-
-Name | Type
------------- | -------------
-m_DefaultCaseOutflow | `CPulse_OutflowConnection`
-m_CaseOutflows | `CUtlVector< CPulse_OutflowConnection >`
-
----
-
 ## C_FuncTrackTrain
 Derived from: [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -5283,10 +5161,6 @@ Name | Type
 m_nLongAxis | `int32`
 m_flRadius | `float32`
 m_flLineLength | `float32`
-
----
-
-## CCSPointScriptExtensions_CCSWeaponBaseVData
 
 ---
 
@@ -5372,11 +5246,6 @@ m_pReticleHintTextName | `char[256]`
 
 ---
 
-## C_EnvProjectedTexture
-Derived from: [C_ModelPointEntity](#c_modelpointentity), [C_BaseModelEntity](#c_basemodelentity), [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
-
----
-
 ## C_CSPetPlacement
 Derived from: [C_BaseEntity](#c_baseentity), [CEntityInstance](#centityinstance)
 
@@ -5409,7 +5278,7 @@ m_fSpeed | `float32`
 m_flFrame | `float32`
 m_nClipStyle | `BeamClipStyle_t`
 m_bTurnedOff | `bool`
-m_vecEndPos | `Vector`
+m_vecEndPos | `VectorWS`
 m_hEndEntity | `CHandle< C_BaseEntity >`
 
 ---
@@ -5935,6 +5804,11 @@ m_flBotMaxVisionDistance | `float32`
 m_iHostageCount | `int32`
 m_bFadePlayerVisibilityFarZ | `bool`
 m_bRainTraceToSkyEnabled | `bool`
+m_flEnvRainStrength | `float32`
+m_flEnvPuddleRippleStrength | `float32`
+m_flEnvPuddleRippleDirection | `float32`
+m_flEnvWetnessCoverage | `float32`
+m_flEnvWetnessDryingAmount | `float32`
 
 ---
 
@@ -6149,6 +6023,7 @@ m_bBuiltRightHanded | `bool`
 m_bAllowFlipping | `bool`
 m_sMuzzleAttachment | `CAttachmentNameSymbolWithStorage`
 m_szMuzzleFlashParticle | `CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > >`
+m_szMuzzleFlashParticleConfig | `CUtlString`
 m_szBarrelSmokeParticle | `CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > >`
 m_nMuzzleSmokeShotThreshold | `uint8`
 m_flMuzzleSmokeTimeout | `float32`
@@ -6225,6 +6100,7 @@ m_bAllowInteractionFromAllSceneWorlds | `bool`
 m_vecCSSClasses | `C_NetworkUtlVectorBase< CUtlSymbolLarge >`
 m_bOpaque | `bool`
 m_bNoDepth | `bool`
+m_bVisibleWhenParentNoDraw | `bool`
 m_bRenderBackface | `bool`
 m_bUseOffScreenIndicator | `bool`
 m_bExcludeFromSaveGames | `bool`
