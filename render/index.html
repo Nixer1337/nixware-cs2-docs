@@ -1,0 +1,1952 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../ui/">
+      
+      
+        <link rel="next" href="../engine/">
+      
+      
+      <link rel="icon" href="../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
+    
+    
+      
+        <title>render - Nixware CS2 API</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="darkgrey" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#render" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Nixware CS2 API" class="md-header__button md-logo" aria-label="Nixware CS2 API" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Nixware CS2 API
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              render
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Nixware CS2 API" class="md-nav__button md-logo" aria-label="Nixware CS2 API" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    Nixware CS2 API
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ui/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ui
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    render
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    render
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#screen_size" class="md-nav__link">
+    <span class="md-ellipsis">
+      screen_size
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frame_count" class="md-nav__link">
+    <span class="md-ellipsis">
+      frame_count
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frame_time" class="md-nav__link">
+    <span class="md-ellipsis">
+      frame_time
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup_texture" class="md-nav__link">
+    <span class="md-ellipsis">
+      setup_texture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup_texture_rgba" class="md-nav__link">
+    <span class="md-ellipsis">
+      setup_texture_rgba
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup_texture_from_memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      setup_texture_from_memory
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup_font" class="md-nav__link">
+    <span class="md-ellipsis">
+      setup_font
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#calc_text_size" class="md-nav__link">
+    <span class="md-ellipsis">
+      calc_text_size
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#world_to_screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      world_to_screen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#texture" class="md-nav__link">
+    <span class="md-ellipsis">
+      texture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#text" class="md-nav__link">
+    <span class="md-ellipsis">
+      text
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#line" class="md-nav__link">
+    <span class="md-ellipsis">
+      line
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rect" class="md-nav__link">
+    <span class="md-ellipsis">
+      rect
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rect_filled" class="md-nav__link">
+    <span class="md-ellipsis">
+      rect_filled
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rect_filled_fade" class="md-nav__link">
+    <span class="md-ellipsis">
+      rect_filled_fade
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#circle" class="md-nav__link">
+    <span class="md-ellipsis">
+      circle
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#circle_filled" class="md-nav__link">
+    <span class="md-ellipsis">
+      circle_filled
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#circle_fade" class="md-nav__link">
+    <span class="md-ellipsis">
+      circle_fade
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arc" class="md-nav__link">
+    <span class="md-ellipsis">
+      arc
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#polygon" class="md-nav__link">
+    <span class="md-ellipsis">
+      polygon
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concave_polygon" class="md-nav__link">
+    <span class="md-ellipsis">
+      concave_polygon
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#poly_line" class="md-nav__link">
+    <span class="md-ellipsis">
+      poly_line
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#push_clip_rect" class="md-nav__link">
+    <span class="md-ellipsis">
+      push_clip_rect
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pop_clip_rect" class="md-nav__link">
+    <span class="md-ellipsis">
+      pop_clip_rect
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#circle_3d" class="md-nav__link">
+    <span class="md-ellipsis">
+      circle_3d
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#circle_filled_3d" class="md-nav__link">
+    <span class="md-ellipsis">
+      circle_filled_3d
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#circle_fade_3d" class="md-nav__link">
+    <span class="md-ellipsis">
+      circle_fade_3d
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../engine/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    engine
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entitylist/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    entitylist
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../events/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    events
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cvars/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    cvars
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../netvars/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    netvars
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../math/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    math
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../types/vec2_t/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    types
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../environment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    environment
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#screen_size" class="md-nav__link">
+    <span class="md-ellipsis">
+      screen_size
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frame_count" class="md-nav__link">
+    <span class="md-ellipsis">
+      frame_count
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frame_time" class="md-nav__link">
+    <span class="md-ellipsis">
+      frame_time
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup_texture" class="md-nav__link">
+    <span class="md-ellipsis">
+      setup_texture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup_texture_rgba" class="md-nav__link">
+    <span class="md-ellipsis">
+      setup_texture_rgba
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup_texture_from_memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      setup_texture_from_memory
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup_font" class="md-nav__link">
+    <span class="md-ellipsis">
+      setup_font
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#calc_text_size" class="md-nav__link">
+    <span class="md-ellipsis">
+      calc_text_size
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#world_to_screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      world_to_screen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#texture" class="md-nav__link">
+    <span class="md-ellipsis">
+      texture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#text" class="md-nav__link">
+    <span class="md-ellipsis">
+      text
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#line" class="md-nav__link">
+    <span class="md-ellipsis">
+      line
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rect" class="md-nav__link">
+    <span class="md-ellipsis">
+      rect
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rect_filled" class="md-nav__link">
+    <span class="md-ellipsis">
+      rect_filled
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rect_filled_fade" class="md-nav__link">
+    <span class="md-ellipsis">
+      rect_filled_fade
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#circle" class="md-nav__link">
+    <span class="md-ellipsis">
+      circle
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#circle_filled" class="md-nav__link">
+    <span class="md-ellipsis">
+      circle_filled
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#circle_fade" class="md-nav__link">
+    <span class="md-ellipsis">
+      circle_fade
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arc" class="md-nav__link">
+    <span class="md-ellipsis">
+      arc
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#polygon" class="md-nav__link">
+    <span class="md-ellipsis">
+      polygon
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concave_polygon" class="md-nav__link">
+    <span class="md-ellipsis">
+      concave_polygon
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#poly_line" class="md-nav__link">
+    <span class="md-ellipsis">
+      poly_line
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#push_clip_rect" class="md-nav__link">
+    <span class="md-ellipsis">
+      push_clip_rect
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pop_clip_rect" class="md-nav__link">
+    <span class="md-ellipsis">
+      pop_clip_rect
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#circle_3d" class="md-nav__link">
+    <span class="md-ellipsis">
+      circle_3d
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#circle_filled_3d" class="md-nav__link">
+    <span class="md-ellipsis">
+      circle_filled_3d
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#circle_fade_3d" class="md-nav__link">
+    <span class="md-ellipsis">
+      circle_fade_3d
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="render">render<a class="headerlink" href="#render" title="Permanent link">&para;</a></h1>
+<h3 id="screen_size"><strong>screen_size</strong><a class="headerlink" href="#screen_size" title="Permanent link">&para;</a></h3>
+<p><font size=5><code class="language-typescript highlight"><span class="nx">render</span><span class="p">.</span><span class="nx">screen_size</span><span class="p">()</span><span class="o">:</span></code> <a href="/types/vec2_t/"><code>vec2_t</code></a></font>        </p>
+<hr />
+<h3 id="frame_count"><strong>frame_count</strong><a class="headerlink" href="#frame_count" title="Permanent link">&para;</a></h3>
+<p><font size=5><code class="language-typescript highlight"><span class="nx">render</span><span class="p">.</span><span class="nx">frame_count</span><span class="p">()</span><span class="o">:</span></code> <code>number</code></font>        </p>
+<hr />
+<h3 id="frame_time"><strong>frame_time</strong><a class="headerlink" href="#frame_time" title="Permanent link">&para;</a></h3>
+<p><font size=5><code class="language-typescript highlight"><span class="nx">render</span><span class="p">.</span><span class="nx">frame_time</span><span class="p">()</span><span class="o">:</span></code> <code>number</code></font>        </p>
+<hr />
+<h3 id="setup_texture"><strong>setup_texture</strong><a class="headerlink" href="#setup_texture" title="Permanent link">&para;</a></h3>
+<p><font size=5><code class="language-typescript highlight"><span class="nx">render</span><span class="p">.</span><span class="nx">setup_texture</span><span class="p">(</span><span class="nx">filename</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="o">:</span></code> <code>texture_t</code></font>        </p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>filename</strong></td>
+<td><code>string</code></td>
+<td>Path to the texture</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you specify a texture that does not exist, return value will be <code>nil</code>.</p>
+</div>
+<details class="example">
+<summary>Example</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kd">local</span><span class="w"> </span><span class="nv">texture</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">render</span><span class="p">.</span><span class="nf">setup_texture</span><span class="p">(</span><span class="s2">&quot;nix/scripts/resources/example.png&quot;</span><span class="p">)</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="nf">register_callback</span><span class="p">(</span><span class="s2">&quot;paint&quot;</span><span class="p">,</span><span class="w"> </span><span class="kr">function</span><span class="p">()</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">    </span><span class="nv">render</span><span class="p">.</span><span class="nf">texture</span><span class="p">(</span><span class="nv">texture</span><span class="p">,</span><span class="w"> </span><span class="nf">vec2_t</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">),</span><span class="w"> </span><span class="nf">vec2_t</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="w"> </span><span class="mi">200</span><span class="p">))</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="kr">end</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 id="setup_texture_rgba"><strong>setup_texture_rgba</strong><a class="headerlink" href="#setup_texture_rgba" title="Permanent link">&para;</a></h3>
+<p><font size=5><code class="language-typescript highlight"><span class="nx">render</span><span class="p">.</span><span class="nx">setup_texture_rgba</span><span class="p">(</span><span class="nx">buffer</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">[],</span><span class="w"> </span><span class="nx">size</span><span class="o">:</span><span class="w"> </span><span class="kt">vec2_t</span><span class="p">)</span><span class="o">:</span></code> <code>texture_t</code></font>        </p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>buffer</strong></td>
+<td><code>number[]</code></td>
+<td>Texture buffer. It's an uint32 array which contains RGBA pixels.</td>
+</tr>
+<tr>
+<td><strong>size</strong></td>
+<td><a href="/types/vec2_t/"><code>vec2_t</code></a></td>
+<td>Texture size</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="setup_texture_from_memory"><strong>setup_texture_from_memory</strong><a class="headerlink" href="#setup_texture_from_memory" title="Permanent link">&para;</a></h3>
+<p><font size=5><code class="language-typescript highlight"><span class="nx">render</span><span class="p">.</span><span class="nx">setup_texture_from_memory</span><span class="p">(</span><span class="nx">buffer</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">[])</span><span class="o">:</span></code> <code>texture_t</code></font>        </p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>buffer</strong></td>
+<td><code>number[]</code></td>
+<td>Texture buffer. It's a byte array which contains image bytes.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="setup_font"><strong>setup_font</strong><a class="headerlink" href="#setup_font" title="Permanent link">&para;</a></h3>
+<p><font size=5><code class="language-typescript highlight"><span class="nx">render</span><span class="p">.</span><span class="nx">setup_font</span><span class="p">(</span><span class="nx">filename</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="nx">size</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">,</span><span class="w"> </span><span class="nx">flags?</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="o">:</span></code> <code>font_t</code></font>        </p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>filename</strong></td>
+<td><code>string</code></td>
+<td>Path to the font</td>
+</tr>
+<tr>
+<td><strong>size</strong></td>
+<td><code>number</code></td>
+<td>Font size</td>
+</tr>
+<tr>
+<td><strong>flags</strong></td>
+<td><code>number</code></td>
+<td>Optional. Font flags</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you specify a font that does not exist, return value will be <code>nil</code>.</p>
+</div>
+<details class="example">
+<summary>Example</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kd">local</span><span class="w"> </span><span class="nv">font</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">render</span><span class="p">.</span><span class="nf">setup_font</span><span class="p">(</span><span class="s2">&quot;C:/Windows/Fonts/verdana.ttf&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">32</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="nf">register_callback</span><span class="p">(</span><span class="s2">&quot;paint&quot;</span><span class="p">,</span><span class="w"> </span><span class="kr">function</span><span class="p">()</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">    </span><span class="nv">render</span><span class="p">.</span><span class="nf">text</span><span class="p">(</span><span class="s2">&quot;hello from lua api!&quot;</span><span class="p">,</span><span class="w"> </span><span class="nv">font</span><span class="p">,</span><span class="w"> </span><span class="nf">vec2_t</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">),</span><span class="w"> </span><span class="nf">color_t</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">))</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="kr">end</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 id="calc_text_size"><strong>calc_text_size</strong><a class="headerlink" href="#calc_text_size" title="Permanent link">&para;</a></h3>
+<p><font size=5><code class="language-typescript highlight"><span class="nx">render</span><span class="p">.</span><span class="nx">calc_text_size</span><span class="p">(</span><span class="nx">text</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="nx">font</span><span class="o">:</span><span class="w"> </span><span class="kt">font_t</span><span class="p">,</span><span class="w"> </span><span class="nx">size?</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="o">:</span></code> <a href="/types/vec2_t/"><code>vec2_t</code></a></font>        </p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>text</strong></td>
+<td><code>string</code></td>
+<td>Text size of which will be calculated</td>
+</tr>
+<tr>
+<td><strong>font</strong></td>
+<td><code>font_t</code></td>
+<td>Font object</td>
+</tr>
+<tr>
+<td><strong>size</strong></td>
+<td><code>number</code></td>
+<td>Optional. Font size</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you specify a font that does not exist, return value will be <code>nil</code>.</p>
+</div>
+<hr />
+<h3 id="world_to_screen"><strong>world_to_screen</strong><a class="headerlink" href="#world_to_screen" title="Permanent link">&para;</a></h3>
+<p><font size=5><code class="language-typescript highlight"><span class="nx">render</span><span class="p">.</span><span class="nx">world_to_screen</span><span class="p">(</span><span class="nx">pos</span><span class="o">:</span><span class="w"> </span><span class="kt">vec3_t</span><span class="p">)</span><span class="o">:</span></code> <a href="/types/vec2_t/"><code>vec2_t</code></a></font>        </p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>pos</strong></td>
+<td><a href="/types/vec3_t/"><code>vec3_t</code></a></td>
+<td>World position</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If world position is not on the screen, return value will be <code>nil</code>.</p>
+</div>
+<details class="example">
+<summary>Example</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span>
+<span class="normal"><a href="#__codelineno-2-5">5</a></span>
+<span class="normal"><a href="#__codelineno-2-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="nf">register_callback</span><span class="p">(</span><span class="s2">&quot;paint&quot;</span><span class="p">,</span><span class="w"> </span><span class="kr">function</span><span class="p">()</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="w">    </span><span class="kd">local</span><span class="w"> </span><span class="nv">w2s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">render</span><span class="p">.</span><span class="nf">world_to_screen</span><span class="p">(</span><span class="nf">vec3_t</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">))</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="w">    </span><span class="kr">if</span><span class="w"> </span><span class="nv">w2s</span><span class="w"> </span><span class="kr">then</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="w">        </span><span class="nv">render</span><span class="p">.</span><span class="nf">circle_fade</span><span class="p">(</span><span class="nv">w2s</span><span class="p">,</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w"> </span><span class="nf">color_t</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mf">0.25</span><span class="p">,</span><span class="w"> </span><span class="mf">0.25</span><span class="p">,</span><span class="w"> </span><span class="mf">0.5</span><span class="p">),</span><span class="w"> </span><span class="nf">color_t</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">))</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="w">    </span><span class="kr">end</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="kr">end</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 id="texture"><strong>texture</strong><a class="headerlink" href="#texture" title="Permanent link">&para;</a></h3>
+<p><font size=5><code class="language-typescript highlight"><span class="nx">render</span><span class="p">.</span><span class="nx">texture</span><span class="p">(</span><span class="nx">texture</span><span class="o">:</span><span class="w"> </span><span class="kt">texture_t</span><span class="p">,</span><span class="w"> </span><span class="nx">from</span><span class="o">:</span><span class="w"> </span><span class="kt">vec2_t</span><span class="p">,</span><span class="w"> </span><span class="nx">to</span><span class="o">:</span><span class="w"> </span><span class="kt">vec2_t</span><span class="p">,</span><span class="w"> </span><span class="nx">color?</span><span class="o">:</span><span class="w"> </span><span class="kt">color_t</span><span class="p">,</span><span class="w"> </span><span class="nx">rounding?</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span></code></font>        </p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>texture</strong></td>
+<td><code>texture_t</code></td>
+<td>Texture object</td>
+</tr>
+<tr>
+<td><strong>from</strong></td>
+<td><a href="/types/vec2_t/"><code>vec2_t</code></a></td>
+<td>Start position of the texture</td>
+</tr>
+<tr>
+<td><strong>to</strong></td>
+<td><a href="/types/vec2_t/"><code>vec2_t</code></a></td>
+<td>End position of the texture</td>
+</tr>
+<tr>
+<td><strong>color</strong></td>
+<td><a href="/types/color_t/"><code>color_t</code></a></td>
+<td>Optional. Texture color</td>
+</tr>
+<tr>
+<td><strong>rounding</strong></td>
+<td><code>number</code></td>
+<td>Optional. Rounding of the texture</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="text"><strong>text</strong><a class="headerlink" href="#text" title="Permanent link">&para;</a></h3>
+<p><font size=5><code class="language-typescript highlight"><span class="nx">render</span><span class="p">.</span><span class="nx">text</span><span class="p">(</span><span class="nx">text</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="nx">font</span><span class="o">:</span><span class="w"> </span><span class="kt">font_t</span><span class="p">,</span><span class="w"> </span><span class="nx">pos</span><span class="o">:</span><span class="w"> </span><span class="kt">vec2_t</span><span class="p">,</span><span class="w"> </span><span class="nx">color?</span><span class="o">:</span><span class="w"> </span><span class="kt">color_t</span><span class="p">,</span><span class="w"> </span><span class="nx">size?</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span></code></font>        </p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>text</strong></td>
+<td><code>string</code></td>
+<td>Text to render</td>
+</tr>
+<tr>
+<td><strong>font</strong></td>
+<td><code>font_t</code></td>
+<td>Font object</td>
+</tr>
+<tr>
+<td><strong>pos</strong></td>
+<td><a href="/types/vec2_t/"><code>vec2_t</code></a></td>
+<td>Position of where text will be rendered</td>
+</tr>
+<tr>
+<td><strong>color</strong></td>
+<td><a href="/types/color_t/"><code>color_t</code></a></td>
+<td>Optional. Text color</td>
+</tr>
+<tr>
+<td><strong>size</strong></td>
+<td><code>number</code></td>
+<td>Optional. Text size</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="line"><strong>line</strong><a class="headerlink" href="#line" title="Permanent link">&para;</a></h3>
+<p><font size=5><code class="language-typescript highlight"><span class="nx">render</span><span class="p">.</span><span class="nx">line</span><span class="p">(</span><span class="nx">from</span><span class="o">:</span><span class="w"> </span><span class="kt">vec2_t</span><span class="p">,</span><span class="w"> </span><span class="nx">to</span><span class="o">:</span><span class="w"> </span><span class="kt">vec2_t</span><span class="p">,</span><span class="w"> </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="kt">color_t</span><span class="p">,</span><span class="w"> </span><span class="nx">thickness?</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span></code></font>        </p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>from</strong></td>
+<td><a href="/types/vec2_t/"><code>vec2_t</code></a></td>
+<td>Start position of the line</td>
+</tr>
+<tr>
+<td><strong>to</strong></td>
+<td><a href="/types/vec2_t/"><code>vec2_t</code></a></td>
+<td>End position of the line</td>
+</tr>
+<tr>
+<td><strong>color</strong></td>
+<td><a href="/types/color_t/"><code>color_t</code></a></td>
+<td>Color of the line</td>
+</tr>
+<tr>
+<td><strong>thickness</strong></td>
+<td><code>number</code></td>
+<td>Optional. Thickness of the line</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="rect"><strong>rect</strong><a class="headerlink" href="#rect" title="Permanent link">&para;</a></h3>
+<p><font size=5><code class="language-typescript highlight"><span class="nx">render</span><span class="p">.</span><span class="nx">rect</span><span class="p">(</span><span class="nx">from</span><span class="o">:</span><span class="w"> </span><span class="kt">vec2_t</span><span class="p">,</span><span class="w"> </span><span class="nx">to</span><span class="o">:</span><span class="w"> </span><span class="kt">vec2_t</span><span class="p">,</span><span class="w"> </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="kt">color_t</span><span class="p">,</span><span class="w"> </span><span class="nx">rounding?</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">,</span><span class="w"> </span><span class="nx">thickness?</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span></code></font>        </p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>from</strong></td>
+<td><a href="/types/vec2_t/"><code>vec2_t</code></a></td>
+<td>Start position of the rectangle</td>
+</tr>
+<tr>
+<td><strong>to</strong></td>
+<td><a href="/types/vec2_t/"><code>vec2_t</code></a></td>
+<td>End position of the rectangle</td>
+</tr>
+<tr>
+<td><strong>color</strong></td>
+<td><a href="/types/color_t/"><code>color_t</code></a></td>
+<td>Color of the rectangle</td>
+</tr>
+<tr>
+<td><strong>rounding</strong></td>
+<td><code>number</code></td>
+<td>Optional. Rounding of the rectangle</td>
+</tr>
+<tr>
+<td><strong>thickness</strong></td>
+<td><code>number</code></td>
+<td>Optional. Thickness of the rectangle</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="rect_filled"><strong>rect_filled</strong><a class="headerlink" href="#rect_filled" title="Permanent link">&para;</a></h3>
+<p><font size=5><code class="language-typescript highlight"><span class="nx">render</span><span class="p">.</span><span class="nx">rect_filled</span><span class="p">(</span><span class="nx">from</span><span class="o">:</span><span class="w"> </span><span class="kt">vec2_t</span><span class="p">,</span><span class="w"> </span><span class="nx">to</span><span class="o">:</span><span class="w"> </span><span class="kt">vec2_t</span><span class="p">,</span><span class="w"> </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="kt">color_t</span><span class="p">,</span><span class="w"> </span><span class="nx">rounding?</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span></code></font>        </p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>from</strong></td>
+<td><a href="/types/vec2_t/"><code>vec2_t</code></a></td>
+<td>Start position of a rectangle</td>
+</tr>
+<tr>
+<td><strong>to</strong></td>
+<td><a href="/types/vec2_t/"><code>vec2_t</code></a></td>
+<td>End position of the rectangle</td>
+</tr>
+<tr>
+<td><strong>color</strong></td>
+<td><a href="/types/color_t/"><code>color_t</code></a></td>
+<td>Color of the rectangle</td>
+</tr>
+<tr>
+<td><strong>rounding</strong></td>
+<td><code>number</code></td>
+<td>Optional. Rounding of the rectangle</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="rect_filled_fade"><strong>rect_filled_fade</strong><a class="headerlink" href="#rect_filled_fade" title="Permanent link">&para;</a></h3>
+<p><font size=5><code class="language-typescript highlight"><span class="nx">render</span><span class="p">.</span><span class="nx">rect_filled_fade</span><span class="p">(</span><span class="nx">from</span><span class="o">:</span><span class="w"> </span><span class="kt">vec2_t</span><span class="p">,</span><span class="w"> </span><span class="nx">to</span><span class="o">:</span><span class="w"> </span><span class="kt">vec2_t</span><span class="p">,</span><span class="w"> </span><span class="nx">col_upr_left</span><span class="o">:</span><span class="w"> </span><span class="kt">color_t</span><span class="p">,</span><span class="w"> </span><span class="nx">col_upr_right</span><span class="o">:</span><span class="w"> </span><span class="kt">color_t</span><span class="p">,</span><span class="w"> </span><span class="nx">col_bot_right</span><span class="o">:</span><span class="w"> </span><span class="kt">color_t</span><span class="p">,</span><span class="w"> </span><span class="nx">col_bot_left</span><span class="o">:</span><span class="w"> </span><span class="kt">color_t</span><span class="p">)</span></code></font>        </p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>from</strong></td>
+<td><a href="/types/vec2_t/"><code>vec2_t</code></a></td>
+<td>Start position of a rectangle</td>
+</tr>
+<tr>
+<td><strong>to</strong></td>
+<td><a href="/types/vec2_t/"><code>vec2_t</code></a></td>
+<td>Font object</td>
+</tr>
+<tr>
+<td><strong>col_upr_left</strong></td>
+<td><a href="/types/color_t/"><code>color_t</code></a></td>
+<td>Color of the top left corner</td>
+</tr>
+<tr>
+<td><strong>col_upr_right</strong></td>
+<td><a href="/types/color_t/"><code>color_t</code></a></td>
+<td>Color of the top right corner</td>
+</tr>
+<tr>
+<td><strong>col_bot_right</strong></td>
+<td><a href="/types/color_t/"><code>color_t</code></a></td>
+<td>Color of the bottom right corner</td>
+</tr>
+<tr>
+<td><strong>col_bot_left</strong></td>
+<td><a href="/types/color_t/"><code>color_t</code></a></td>
+<td>Color of the bottom left corner</td>
+</tr>
+</tbody>
+</table>
+<!-- ["rounding",    "number",   "Rounding of the rectangle", true], -->
+<hr />
+<h3 id="circle"><strong>circle</strong><a class="headerlink" href="#circle" title="Permanent link">&para;</a></h3>
+<p><font size=5><code class="language-typescript highlight"><span class="nx">render</span><span class="p">.</span><span class="nx">circle</span><span class="p">(</span><span class="nx">pos</span><span class="o">:</span><span class="w"> </span><span class="kt">vec2_t</span><span class="p">,</span><span class="w"> </span><span class="nx">radius</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">,</span><span class="w"> </span><span class="nx">segments</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">,</span><span class="w"> </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="kt">color_t</span><span class="p">,</span><span class="w"> </span><span class="nx">thickness?</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span></code></font>        </p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>pos</strong></td>
+<td><a href="/types/vec2_t/"><code>vec2_t</code></a></td>
+<td>Position of the circle</td>
+</tr>
+<tr>
+<td><strong>radius</strong></td>
+<td><code>number</code></td>
+<td>Radius of the circle</td>
+</tr>
+<tr>
+<td><strong>segments</strong></td>
+<td><code>number</code></td>
+<td>Count of the circle segments</td>
+</tr>
+<tr>
+<td><strong>color</strong></td>
+<td><a href="/types/color_t/"><code>color_t</code></a></td>
+<td>Color of the circle</td>
+</tr>
+<tr>
+<td><strong>thickness</strong></td>
+<td><code>number</code></td>
+<td>Optional. Thickness of the circle</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="circle_filled"><strong>circle_filled</strong><a class="headerlink" href="#circle_filled" title="Permanent link">&para;</a></h3>
+<p><font size=5><code class="language-typescript highlight"><span class="nx">render</span><span class="p">.</span><span class="nx">circle_filled</span><span class="p">(</span><span class="nx">pos</span><span class="o">:</span><span class="w"> </span><span class="kt">vec2_t</span><span class="p">,</span><span class="w"> </span><span class="nx">radius</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">,</span><span class="w"> </span><span class="nx">segments</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">,</span><span class="w"> </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="kt">color_t</span><span class="p">)</span></code></font>        </p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>pos</strong></td>
+<td><a href="/types/vec2_t/"><code>vec2_t</code></a></td>
+<td>Position of the circle</td>
+</tr>
+<tr>
+<td><strong>radius</strong></td>
+<td><code>number</code></td>
+<td>Radius of the circle</td>
+</tr>
+<tr>
+<td><strong>segments</strong></td>
+<td><code>number</code></td>
+<td>Count of the circle segments</td>
+</tr>
+<tr>
+<td><strong>color</strong></td>
+<td><a href="/types/color_t/"><code>color_t</code></a></td>
+<td>Color of the circle</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="circle_fade"><strong>circle_fade</strong><a class="headerlink" href="#circle_fade" title="Permanent link">&para;</a></h3>
+<p><font size=5><code class="language-typescript highlight"><span class="nx">render</span><span class="p">.</span><span class="nx">circle_fade</span><span class="p">(</span><span class="nx">pos</span><span class="o">:</span><span class="w"> </span><span class="kt">vec2_t</span><span class="p">,</span><span class="w"> </span><span class="nx">radius</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">,</span><span class="w"> </span><span class="nx">color_in</span><span class="o">:</span><span class="w"> </span><span class="kt">color_t</span><span class="p">,</span><span class="w"> </span><span class="nx">color_out</span><span class="o">:</span><span class="w"> </span><span class="kt">color_t</span><span class="p">)</span></code></font>        </p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>pos</strong></td>
+<td><a href="/types/vec2_t/"><code>vec2_t</code></a></td>
+<td>Position of the circle</td>
+</tr>
+<tr>
+<td><strong>radius</strong></td>
+<td><code>number</code></td>
+<td>Radius of the circle</td>
+</tr>
+<tr>
+<td><strong>color_in</strong></td>
+<td><a href="/types/color_t/"><code>color_t</code></a></td>
+<td>Color of the center of the circle</td>
+</tr>
+<tr>
+<td><strong>color_out</strong></td>
+<td><a href="/types/color_t/"><code>color_t</code></a></td>
+<td>Color of the edge of the circle</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="arc"><strong>arc</strong><a class="headerlink" href="#arc" title="Permanent link">&para;</a></h3>
+<p><font size=5><code class="language-typescript highlight"><span class="nx">render</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="nx">pos</span><span class="o">:</span><span class="w"> </span><span class="kt">vec2_t</span><span class="p">,</span><span class="w"> </span><span class="nx">radius</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">,</span><span class="w"> </span><span class="nx">a_min</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">,</span><span class="w"> </span><span class="nx">a_max</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">,</span><span class="w"> </span><span class="nx">segments</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">,</span><span class="w"> </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="kt">color_t</span><span class="p">,</span><span class="w"> </span><span class="nx">thickness?</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span></code></font>        </p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>pos</strong></td>
+<td><a href="/types/vec2_t/"><code>vec2_t</code></a></td>
+<td>Position of the arc</td>
+</tr>
+<tr>
+<td><strong>radius</strong></td>
+<td><code>number</code></td>
+<td>Radius of the arc</td>
+</tr>
+<tr>
+<td><strong>a_min</strong></td>
+<td><code>number</code></td>
+<td>Start angle of the arc in radians</td>
+</tr>
+<tr>
+<td><strong>a_max</strong></td>
+<td><code>number</code></td>
+<td>End angle of the arc in radians</td>
+</tr>
+<tr>
+<td><strong>segments</strong></td>
+<td><code>number</code></td>
+<td>Count of the arc segments</td>
+</tr>
+<tr>
+<td><strong>color</strong></td>
+<td><a href="/types/color_t/"><code>color_t</code></a></td>
+<td>Color of the arc</td>
+</tr>
+<tr>
+<td><strong>thickness</strong></td>
+<td><code>number</code></td>
+<td>Optional. Thickness of the arc</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="polygon"><strong>polygon</strong><a class="headerlink" href="#polygon" title="Permanent link">&para;</a></h3>
+<p><font size=5><code class="language-typescript highlight"><span class="nx">render</span><span class="p">.</span><span class="nx">polygon</span><span class="p">(</span><span class="nx">points</span><span class="o">:</span><span class="w"> </span><span class="kt">vec2_t</span><span class="p">[],</span><span class="w"> </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="kt">color_t</span><span class="p">)</span></code></font>        </p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>points</strong></td>
+<td><a href="/types/vec2_t/"><code>vec2_t[]</code></a></td>
+<td>Array of screen positions</td>
+</tr>
+<tr>
+<td><strong>color</strong></td>
+<td><a href="/types/color_t/"><code>color_t</code></a></td>
+<td>Color of the polygon</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="concave_polygon"><strong>concave_polygon</strong><a class="headerlink" href="#concave_polygon" title="Permanent link">&para;</a></h3>
+<p><font size=5><code class="language-typescript highlight"><span class="nx">render</span><span class="p">.</span><span class="nx">concave_polygon</span><span class="p">(</span><span class="nx">points</span><span class="o">:</span><span class="w"> </span><span class="kt">vec2_t</span><span class="p">[],</span><span class="w"> </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="kt">color_t</span><span class="p">)</span></code></font>        </p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>points</strong></td>
+<td><a href="/types/vec2_t/"><code>vec2_t[]</code></a></td>
+<td>Array of screen positions</td>
+</tr>
+<tr>
+<td><strong>color</strong></td>
+<td><a href="/types/color_t/"><code>color_t</code></a></td>
+<td>Color of the polygon</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="poly_line"><strong>poly_line</strong><a class="headerlink" href="#poly_line" title="Permanent link">&para;</a></h3>
+<p><font size=5><code class="language-typescript highlight"><span class="nx">render</span><span class="p">.</span><span class="nx">poly_line</span><span class="p">(</span><span class="nx">points</span><span class="o">:</span><span class="w"> </span><span class="kt">vec2_t</span><span class="p">[],</span><span class="w"> </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="kt">color_t</span><span class="p">,</span><span class="w"> </span><span class="nx">thickness?</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span></code></font>        </p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>points</strong></td>
+<td><a href="/types/vec2_t/"><code>vec2_t[]</code></a></td>
+<td>Array of screen positions</td>
+</tr>
+<tr>
+<td><strong>color</strong></td>
+<td><a href="/types/color_t/"><code>color_t</code></a></td>
+<td>Color of the polyline</td>
+</tr>
+<tr>
+<td><strong>thickness</strong></td>
+<td><code>number</code></td>
+<td>Optional. Thickness of polyline</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="push_clip_rect"><strong>push_clip_rect</strong><a class="headerlink" href="#push_clip_rect" title="Permanent link">&para;</a></h3>
+<p><font size=5><code class="language-typescript highlight"><span class="nx">render</span><span class="p">.</span><span class="nx">push_clip_rect</span><span class="p">(</span><span class="nx">from</span><span class="o">:</span><span class="w"> </span><span class="kt">vec2_t</span><span class="p">,</span><span class="w"> </span><span class="nx">to</span><span class="o">:</span><span class="w"> </span><span class="kt">vec2_t</span><span class="p">,</span><span class="w"> </span><span class="nx">intersect_with_current_clip_rect?</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="p">)</span></code></font>        </p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>from</strong></td>
+<td><a href="/types/vec2_t/"><code>vec2_t</code></a></td>
+<td>Start position of the clip rect</td>
+</tr>
+<tr>
+<td><strong>to</strong></td>
+<td><a href="/types/vec2_t/"><code>vec2_t</code></a></td>
+<td>End position of the clip rect</td>
+</tr>
+<tr>
+<td><strong>intersect_with_current_clip_rect</strong></td>
+<td><code>boolean</code></td>
+<td>Optional. Allow intersections with other clips</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="pop_clip_rect"><strong>pop_clip_rect</strong><a class="headerlink" href="#pop_clip_rect" title="Permanent link">&para;</a></h3>
+<p><font size=5><code class="language-typescript highlight"><span class="nx">render</span><span class="p">.</span><span class="nx">pop_clip_rect</span><span class="p">()</span></code></font>        </p>
+<hr />
+<h3 id="circle_3d"><strong>circle_3d</strong><a class="headerlink" href="#circle_3d" title="Permanent link">&para;</a></h3>
+<p><font size=5><code class="language-typescript highlight"><span class="nx">render</span><span class="p">.</span><span class="nx">circle_3d</span><span class="p">(</span><span class="nx">pos</span><span class="o">:</span><span class="w"> </span><span class="kt">vec3_t</span><span class="p">,</span><span class="w"> </span><span class="nx">radius</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">,</span><span class="w"> </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="kt">color_t</span><span class="p">,</span><span class="w"> </span><span class="nx">thickness?</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">,</span><span class="w"> </span><span class="nx">normal?</span><span class="o">:</span><span class="w"> </span><span class="kt">vec3_t</span><span class="p">)</span></code></font>        </p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>pos</strong></td>
+<td><a href="/types/vec3_t/"><code>vec3_t</code></a></td>
+<td>Position of the circle</td>
+</tr>
+<tr>
+<td><strong>radius</strong></td>
+<td><code>number</code></td>
+<td>Radius of the circle</td>
+</tr>
+<tr>
+<td><strong>color</strong></td>
+<td><a href="/types/color_t/"><code>color_t</code></a></td>
+<td>Color of the circle</td>
+</tr>
+<tr>
+<td><strong>thickness</strong></td>
+<td><code>number</code></td>
+<td>Optional. Thickness of the circle</td>
+</tr>
+<tr>
+<td><strong>normal</strong></td>
+<td><a href="/types/vec3_t/"><code>vec3_t</code></a></td>
+<td>Optional. Rotation of the circle</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="circle_filled_3d"><strong>circle_filled_3d</strong><a class="headerlink" href="#circle_filled_3d" title="Permanent link">&para;</a></h3>
+<p><font size=5><code class="language-typescript highlight"><span class="nx">render</span><span class="p">.</span><span class="nx">circle_filled_3d</span><span class="p">(</span><span class="nx">pos</span><span class="o">:</span><span class="w"> </span><span class="kt">vec3_t</span><span class="p">,</span><span class="w"> </span><span class="nx">radius</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">,</span><span class="w"> </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="kt">color_t</span><span class="p">,</span><span class="w"> </span><span class="nx">normal?</span><span class="o">:</span><span class="w"> </span><span class="kt">vec3_t</span><span class="p">)</span></code></font>        </p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>pos</strong></td>
+<td><a href="/types/vec3_t/"><code>vec3_t</code></a></td>
+<td>Position of the circle</td>
+</tr>
+<tr>
+<td><strong>radius</strong></td>
+<td><code>number</code></td>
+<td>Radius of the circle</td>
+</tr>
+<tr>
+<td><strong>color</strong></td>
+<td><a href="/types/color_t/"><code>color_t</code></a></td>
+<td>Color of the circle</td>
+</tr>
+<tr>
+<td><strong>normal</strong></td>
+<td><a href="/types/vec3_t/"><code>vec3_t</code></a></td>
+<td>Optional. Rotation of the circle</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="circle_fade_3d"><strong>circle_fade_3d</strong><a class="headerlink" href="#circle_fade_3d" title="Permanent link">&para;</a></h3>
+<p><font size=5><code class="language-typescript highlight"><span class="nx">render</span><span class="p">.</span><span class="nx">circle_fade_3d</span><span class="p">(</span><span class="nx">pos</span><span class="o">:</span><span class="w"> </span><span class="kt">vec3_t</span><span class="p">,</span><span class="w"> </span><span class="nx">radius</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">,</span><span class="w"> </span><span class="nx">color_in</span><span class="o">:</span><span class="w"> </span><span class="kt">color_t</span><span class="p">,</span><span class="w"> </span><span class="nx">color_out</span><span class="o">:</span><span class="w"> </span><span class="kt">color_t</span><span class="p">,</span><span class="w"> </span><span class="nx">normal?</span><span class="o">:</span><span class="w"> </span><span class="kt">vec3_t</span><span class="p">)</span></code></font>        </p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>pos</strong></td>
+<td><a href="/types/vec3_t/"><code>vec3_t</code></a></td>
+<td>Position of the circle</td>
+</tr>
+<tr>
+<td><strong>radius</strong></td>
+<td><code>number</code></td>
+<td>Radius of the circle</td>
+</tr>
+<tr>
+<td><strong>color_in</strong></td>
+<td><a href="/types/color_t/"><code>color_t</code></a></td>
+<td>Color of the center of the circle</td>
+</tr>
+<tr>
+<td><strong>color_out</strong></td>
+<td><a href="/types/color_t/"><code>color_t</code></a></td>
+<td>Color of the edge of the circle</td>
+</tr>
+<tr>
+<td><strong>normal</strong></td>
+<td><a href="/types/vec3_t/"><code>vec3_t</code></a></td>
+<td>Optional. Rotation of the circle</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../ui/" class="md-footer__link md-footer__link--prev" aria-label="Previous: ui">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                ui
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../engine/" class="md-footer__link md-footer__link--next" aria-label="Next: engine">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                engine
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+    <span>
+        Documentation by
+        <a href="https://nixware.cc/members/66717/" target="_blank" rel="noopener" class="glow-link" style="padding: 0 4px;">
+            <img src="https://avatars.githubusercontent.com/u/46263989" alt="sleebu avatar" style="transform: translate(0, 20%); height: 1em; border-radius: 100%" /> 
+            sleebu
+        </a>
+    </span>
+    <a href="https://github.com/Nixer1337/nixware-cs2-docs" class="github-last-updated">
+        <img alt="GitHub last commit (branch)" src="https://badgen.net/github/last-commit/Nixer1337/nixware-cs2-docs?color=blue&icon=github">
+    </a>
+</div>
+<style>.github-last-updated { display: flex; align-items: center; }</style>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.tracking", "navigation.prune", "navigation.top", "navigation.indexes", "content.code.copy", "search.suggest", "search.highlight", "navigation.footer"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
